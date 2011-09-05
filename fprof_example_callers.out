@@ -1,0 +1,939 @@
+%% Analysis results:
+{  analysis_options,
+ [{callers, true},
+  {sort, acc},
+  {totals, false},
+  {details, true}]}.
+
+%                                               CNT       ACC       OWN        
+[{ totals,                                     4336,31686.052,   21.843}].  %%%
+
+
+%                                               CNT       ACC       OWN        
+[{ "<0.33.0>",                                 4336,undefined,   21.843}].   %%
+
+{[{undefined,                                     0,31686.019,    0.021},      
+  {{shell,exprs,6},                               2,    0.000,    0.076}],     
+ { {shell,exprs,7},                               2,31686.019,    0.097},     %
+ [{{shell,eval_loop,3},                           1,31685.587,    0.026},      
+  {{shell,check_command,2},                       2,   14.675,    0.015},      
+  {{shell,used_record_defs,2},                    2,    2.540,    0.012},      
+  {{shell,prep_check,1},                          2,    2.080,    0.703},      
+  {{shell,pp,3},                                  2,    1.365,    0.017},      
+  {{shell,expr,4},                                2,    0.784,    0.014},      
+  {{io,requests,1},                               2,    0.537,    0.013},      
+  {{shell,result_will_be_saved,0},                2,    0.142,    0.035},      
+  {{fprof,just_call,2},                           0,    0.015,    0.009},      
+  {{orddict,from_list,1},                         2,    0.009,    0.005},      
+  {{erl_eval,bindings,1},                         2,    0.009,    0.004},      
+  {{shell,'-exprs/7-lc$^0/1-0-',1},               2,    0.008,    0.008},      
+  {{shell,record_bindings,2},                     2,    0.005,    0.005},      
+  {{erlang,get,0},                                2,    0.005,    0.005},      
+  {{shell,expand_records,2},                      2,    0.004,    0.004}]}.    
+
+{[{{shell,exprs,7},                               1,31685.587,    0.026},      
+  {{shell,eval_loop,3},                           1,    0.000,    0.022}],     
+ { {shell,eval_loop,3},                           2,31685.587,    0.048},     %
+ [{suspend,                                       2,31663.646,    0.000},      
+  {{shell,eval_exprs,7},                          2,   21.862,    0.012},      
+  {{shell,local_func_handler,3},                  2,    0.031,    0.022},      
+  {{shell,eval_loop,3},                           1,    0.000,    0.022}]}.    
+
+{[{{shell,eval_loop,3},                           2,31663.646,    0.000},      
+  {{io,wait_io_mon_reply,2},                      4,    0.559,    0.000},      
+  {{lists,foldl,3},                               1,    0.004,    0.000}],     
+ { suspend,                                       7,31664.209,    0.000},     %
+ [ ]}.
+
+{[{{shell,eval_loop,3},                           2,   21.862,    0.012}],     
+ { {shell,eval_exprs,7},                          2,   21.862,    0.012},     %
+ [{{shell,exprs,6},                               2,   21.850,    0.007}]}.    
+
+{[{{shell,eval_exprs,7},                          2,   21.850,    0.007}],     
+ { {shell,exprs,6},                               2,   21.850,    0.007},     %
+ [{{shell,exprs,7},                               2,    0.000,    0.076}]}.    
+
+{[{{shell,exprs,7},                               2,   14.675,    0.015}],     
+ { {shell,check_command,2},                       2,   14.675,    0.015},     %
+ [{{erl_eval,check_command,2},                    2,   14.631,    0.020},      
+  {{shell,strip_bindings,1},                      2,    0.029,    0.016}]}.    
+
+{[{{shell,check_command,2},                       2,   14.631,    0.020}],     
+ { {erl_eval,check_command,2},                    2,   14.631,    0.020},     %
+ [{{erl_lint,exprs_opt,3},                        2,   14.598,    0.039},      
+  {{erl_eval,bindings,1},                         2,    0.013,    0.008}]}.    
+
+{[{{erl_eval,check_command,2},                    2,   14.598,    0.039}],     
+ { {erl_lint,exprs_opt,3},                        2,   14.598,    0.039},     %
+ [{{erl_lint,start,2},                            2,   11.957,    0.209},      
+  {{erl_lint,exprs,3},                            2,    1.234,    0.030},      
+  {{erl_lint,zip_file_and_line,2},                2,    1.219,    0.008},      
+  {{erl_lint,return_status,1},                    2,    0.130,    0.022},      
+  {{orddict,from_list,1},                         2,    0.013,    0.007},      
+  {{lists,foldl,3},                               2,    0.006,    0.006}]}.    
+
+{[{{erl_lint,exprs_opt,3},                        2,   11.957,    0.209}],     
+ { {erl_lint,start,2},                            2,   11.957,    0.209},     %
+ [{{erl_lint,default_types,0},                    2,   10.107,    0.013},      
+  {{erl_lint,bool_option,4},                     26,    0.576,    0.080},      
+  {{dict,from_list,1},                            4,    0.407,    0.025},      
+  {{ordsets,from_list,1},                         2,    0.179,    0.025},      
+  {{gb_sets,from_list,1},                         4,    0.149,    0.025},      
+  {{erl_lint,'-start/2-lc$^0/1-0-',1},            2,    0.111,    0.026},      
+  {{dict,new,0},                                  6,    0.070,    0.056},      
+  {{erl_lint,value_option,7},                     2,    0.051,    0.009},      
+  {{erl_lint,'-start/2-lc$^1/1-1-',1},            2,    0.037,    0.015},      
+  {{ordsets,is_element,2},                        2,    0.029,    0.007},      
+  {{sets,new,0},                                  2,    0.017,    0.013},      
+  {{erl_lint,pseudolocals,0},                     6,    0.015,    0.015}]}.    
+
+{[{{dict,from_list,1},                            6,    9.847,    0.039},      
+  {{erl_lint,expr_list,3},                       15,    0.820,    0.087},      
+  {{erl_lint,bool_option,4},                     26,    0.496,    0.153},      
+  {{erl_eval,merge_bindings,2},                  17,    0.046,    0.046},      
+  {{erl_lint,value_option,7},                     2,    0.042,    0.012},      
+  {{orddict,from_list,1},                         4,    0.010,    0.010},      
+  {{erl_lint,exprs_opt,3},                        2,    0.006,    0.006},      
+  {{lists,foldl,3},                             200,    0.000,    1.168}],     
+ { {lists,foldl,3},                             272,   11.267,    1.521},     %
+ [{{dict,'-from_list/1-fun-0-',2},              116,    9.004,    0.416},      
+  {{erl_lint,'-expr_list/3-fun-0-',3},           28,    0.802,    0.225},      
+  {{erl_lint,'-bool_option/4-fun-0-',4},         52,    0.128,    0.128},      
+  {{erl_lint,'-value_option/7-fun-0-',7},         4,    0.011,    0.011},      
+  {suspend,                                       1,    0.004,    0.000},      
+  {{lists,foldl,3},                             200,    0.000,    1.168}]}.    
+
+{[{{erl_lint,start,2},                            2,   10.107,    0.013}],     
+ { {erl_lint,default_types,0},                    2,   10.107,    0.013},     %
+ [{{dict,from_list,1},                            2,    9.526,    0.013},      
+  {{erl_lint,'-default_types/0-lc$^0/1-0-',1},    2,    0.568,    0.125}]}.    
+
+{[{{erl_lint,default_types,0},                    2,    9.526,    0.013},      
+  {{erl_lint,start,2},                            4,    0.407,    0.025}],     
+ { {dict,from_list,1},                            6,    9.933,    0.038},     %
+ [{{lists,foldl,3},                               6,    9.847,    0.039},      
+  {{dict,new,0},                                  6,    0.048,    0.033}]}.    
+
+{[{{lists,foldl,3},                             116,    9.004,    0.416}],     
+ { {dict,'-from_list/1-fun-0-',2},              116,    9.004,    0.416},     %
+ [{{dict,store,3},                              116,    8.588,    1.103}]}.    
+
+{[{{dict,'-from_list/1-fun-0-',2},              116,    8.588,    1.103}],     
+ { {dict,store,3},                              116,    8.588,    1.103},     %
+ [{{dict,on_bucket,3},                          116,    5.125,    1.797},      
+  {{dict,maybe_expand,2},                       116,    1.330,    0.351},      
+  {{dict,get_slot,2},                           116,    0.996,    0.636},      
+  {garbage_collect,                               1,    0.034,    0.034}]}.    
+
+{[{{dict,store,3},                              116,    5.125,    1.797}],     
+ { {dict,on_bucket,3},                          116,    5.125,    1.797},     %
+ [{{dict,'-store/3-fun-0-',3},                  116,    2.389,    0.359},      
+  {{erlang,setelement,3},                       348,    0.886,    0.886},      
+  {garbage_collect,                               1,    0.053,    0.053}]}.    
+
+{[{{shell,exprs,7},                               2,    2.540,    0.012}],     
+ { {shell,used_record_defs,2},                    2,    2.540,    0.012},     %
+ [{{shell,used_records,3},                        2,    2.516,    0.014},      
+  {{shell,record_defs,2},                         2,    0.012,    0.006}]}.    
+
+{[{{shell,used_record_defs,2},                    2,    2.516,    0.014},      
+  {{shell,used_records,3},                      250,    0.000,    1.697}],     
+ { {shell,used_records,3},                      252,    2.516,    1.711},     %
+ [{{shell,used_records,1},                      252,    0.779,    0.699},      
+  {garbage_collect,                               1,    0.026,    0.026},      
+  {{shell,used_records,3},                      250,    0.000,    1.697}]}.    
+
+{[{{dict,on_bucket,3},                          116,    2.389,    0.359}],     
+ { {dict,'-store/3-fun-0-',3},                  116,    2.389,    0.359},     %
+ [{{dict,store_bkt_val,3},                      116,    2.030,    0.796}]}.    
+
+{[{{shell,exprs,7},                               2,    2.080,    0.703},      
+  {{shell,prep_check,1},                        290,    0.000,    1.136}],     
+ { {shell,prep_check,1},                        292,    2.080,    1.839},     %
+ [{{erlang,list_to_tuple,1},                     36,    0.154,    0.154},      
+  {{erlang,tuple_to_list,1},                     36,    0.087,    0.087},      
+  {{shell,prep_check,1},                        290,    0.000,    1.136}]}.    
+
+{[{{dict,'-store/3-fun-0-',3},                  116,    2.030,    0.796},      
+  {{dict,store_bkt_val,3},                      310,    0.000,    1.234}],     
+ { {dict,store_bkt_val,3},                      426,    2.030,    2.030},     %
+ [{{dict,store_bkt_val,3},                      310,    0.000,    1.234}]}.    
+
+{[{{shell,exprs,7},                               2,    1.365,    0.017}],     
+ { {shell,pp,3},                                  2,    1.365,    0.017},     %
+ [{{io_lib_pretty,print,6},                       2,    0.988,    0.017},      
+  {{shell,columns,0},                             2,    0.354,    0.013},      
+  {{shell,record_print_fun,1},                    2,    0.006,    0.006}]}.    
+
+{[{{dict,store,3},                              116,    1.330,    0.351}],     
+ { {dict,maybe_expand,2},                       116,    1.330,    0.351},     %
+ [{{dict,maybe_expand_aux,2},                   116,    0.979,    0.702}]}.    
+
+{[{{erl_lint,exprs_opt,3},                        2,    1.234,    0.030},      
+  {{erl_lint,exprs,3},                            2,    0.000,    0.005}],     
+ { {erl_lint,exprs,3},                            4,    1.234,    0.035},     %
+ [{{erl_lint,expr,3},                             2,    1.168,    0.029},      
+  {{erl_lint,vtupdate,2},                         4,    0.031,    0.013},      
+  {{erl_lint,exprs,3},                            2,    0.000,    0.005}]}.    
+
+{[{{erl_lint,exprs_opt,3},                        2,    1.219,    0.008}],     
+ { {erl_lint,zip_file_and_line,2},                2,    1.219,    0.008},     %
+ [{{erl_lint,modify_line,2},                      2,    1.211,    0.006}]}.    
+
+{[{{erl_lint,zip_file_and_line,2},                2,    1.211,    0.006}],     
+ { {erl_lint,modify_line,2},                      2,    1.211,    0.006},     %
+ [{{erl_lint,modify_line1,2},                     2,    1.205,    0.251}]}.    
+
+{[{{erl_lint,modify_line,2},                      2,    1.205,    0.251},      
+  {{erl_lint,modify_line1,2},                    59,    0.000,    0.252}],     
+ { {erl_lint,modify_line1,2},                    61,    1.205,    0.503},     %
+ [{{erl_lint,'-zip_file_and_line/2-fun-1-',2},   36,    0.702,    0.105},      
+  {{erl_lint,modify_line1,2},                    59,    0.000,    0.252}]}.    
+
+{[{{erl_lint,exprs,3},                            2,    1.168,    0.029},      
+  {{erl_lint,'-expr_list/3-fun-0-',3},           28,    0.000,    0.120}],     
+ { {erl_lint,expr,3},                            30,    1.168,    0.149},     %
+ [{{erl_lint,expr_list,3},                       15,    0.828,    0.050},      
+  {{erl_lint,expand_package,2},                   2,    0.230,    0.054},      
+  {{erl_lint,check_remote_function,5},            2,    0.076,    0.020},      
+  {{erl_lint,keyword_warning,3},                 15,    0.036,    0.036}]}.    
+
+{[{{dict,on_bucket,3},                          348,    0.886,    0.886},      
+  {{dict,maybe_expand_aux,2},                   116,    0.277,    0.277}],     
+ { {erlang,setelement,3},                       464,    1.163,    1.163},     %
+ [ ]}.
+
+{[{{dict,store,3},                              116,    0.996,    0.636},      
+  {{dict,find,2},                                 2,    0.020,    0.013}],     
+ { {dict,get_slot,2},                           118,    1.016,    0.649},     %
+ [{{erlang,phash,2},                            118,    0.367,    0.367}]}.    
+
+{[{{shell,pp,3},                                  2,    0.988,    0.017}],     
+ { {io_lib_pretty,print,6},                       2,    0.988,    0.017},     %
+ [{{io_lib_pretty,print_length,3},                1,    0.758,    0.006},      
+  {{io_lib_pretty,write,1},                       1,    0.132,    0.006},      
+  {{io_lib,write,1},                              1,    0.078,    0.003},      
+  {{io_lib_pretty,max_cs,2},                      1,    0.003,    0.003}]}.    
+
+{[{{dict,maybe_expand,2},                       116,    0.979,    0.702}],     
+ { {dict,maybe_expand_aux,2},                   116,    0.979,    0.702},     %
+ [{{erlang,setelement,3},                       116,    0.277,    0.277}]}.    
+
+{[{{erl_lint,expr,3},                            15,    0.828,    0.050}],     
+ { {erl_lint,expr_list,3},                       15,    0.828,    0.050},     %
+ [{{lists,foldl,3},                              15,    0.820,    0.087}]}.    
+
+{[{{lists,foldl,3},                              28,    0.802,    0.225}],     
+ { {erl_lint,'-expr_list/3-fun-0-',3},           28,    0.802,    0.225},     %
+ [{{erl_lint,vtmerge,2},                         28,    0.181,    0.095},      
+  {{erl_lint,expr,3},                            28,    0.000,    0.120}]}.    
+
+{[{{shell,exprs,7},                               2,    0.784,    0.014}],     
+ { {shell,expr,4},                                2,    0.784,    0.014},     %
+ [{{erl_eval,expr,4},                             2,    0.743,    0.007},      
+  {{shell,strip_bindings,1},                      2,    0.027,    0.018}]}.    
+
+{[{{shell,used_records,3},                      252,    0.779,    0.699}],     
+ { {shell,used_records,1},                      252,    0.779,    0.699},     %
+ [{{erlang,tuple_to_list,1},                     36,    0.080,    0.080}]}.    
+
+{[{{io_lib_pretty,print,6},                       1,    0.758,    0.006},      
+  {{io_lib_pretty,print_length_list1,3},         12,    0.000,    0.098}],     
+ { {io_lib_pretty,print_length,3},               13,    0.758,    0.104},     %
+ [{{io_lib_pretty,print_length_list,3},           1,    0.744,    0.010},      
+  {{io_lib,write,1},                             12,    0.474,    0.031},      
+  {{erlang,iolist_size,1},                       12,    0.028,    0.028},      
+  {{io_lib_pretty,printable_list,2},              1,    0.008,    0.004}]}.    
+
+{[{{io_lib_pretty,print_length,3},                1,    0.744,    0.010}],     
+ { {io_lib_pretty,print_length_list,3},           1,    0.744,    0.010},     %
+ [{{io_lib_pretty,print_length_list1,3},          1,    0.695,    0.048},      
+  {{io_lib_pretty,list_length,2},                 1,    0.039,    0.004}]}.    
+
+{[{{shell,expr,4},                                2,    0.743,    0.007}],     
+ { {erl_eval,expr,4},                             2,    0.743,    0.007},     %
+ [{{erl_eval,expr,5},                             2,    0.736,    0.054}]}.    
+
+{[{{erl_eval,expr,4},                             2,    0.736,    0.054},      
+  {{erl_eval,expr_list,6},                        2,    0.000,    0.109},      
+  {{erl_eval,expr,5},                            30,    0.000,    0.095}],     
+ { {erl_eval,expr,5},                            34,    0.736,    0.258},     %
+ [{{erl_eval,expr_list,4},                        2,    0.483,    0.006},      
+  {{erl_eval,merge_bindings,2},                  15,    0.170,    0.094},      
+  {{erl_eval,ret_expr,3},                        32,    0.087,    0.087},      
+  {{erl_eval,expand_module_name,2},               2,    0.085,    0.016},      
+  {{erl_eval,do_apply,5},                         2,    0.063,    0.012},      
+  {{erl_internal,bif,3},                          2,    0.005,    0.005},      
+  {{erl_eval,expr,5},                            30,    0.000,    0.095}]}.    
+
+{[{{io,requests,2},                               2,    0.420,    0.028},      
+  {{io,request,2},                                2,    0.285,    0.024}],     
+ { {io,execute_request,2},                        4,    0.705,    0.052},     %
+ [{{io,wait_io_mon_reply,2},                      4,    0.634,    0.058},      
+  {{erlang,monitor,2},                            4,    0.019,    0.019}]}.    
+
+{[{{erl_lint,modify_line1,2},                    36,    0.702,    0.105}],     
+ { {erl_lint,'-zip_file_and_line/2-fun-1-',2},   36,    0.702,    0.105},     %
+ [{{erl_parse,set_line,2},                       36,    0.597,    0.106}]}.    
+
+{[{{io_lib_pretty,print_length_list,3},           1,    0.695,    0.048},      
+  {{io_lib_pretty,print_length_list1,3},         12,    0.000,    0.047}],     
+ { {io_lib_pretty,print_length_list1,3},         13,    0.695,    0.095},     %
+ [{{io_lib_pretty,print_length_list1,3},         12,    0.000,    0.047},      
+  {{io_lib_pretty,print_length,3},               12,    0.000,    0.098}]}.    
+
+{[{{io,execute_request,2},                        4,    0.634,    0.058}],     
+ { {io,wait_io_mon_reply,2},                      4,    0.634,    0.058},     %
+ [{suspend,                                       4,    0.559,    0.000},      
+  {{erlang,demonitor,1},                          4,    0.017,    0.017}]}.    
+
+{[{{erl_lint,'-zip_file_and_line/2-fun-1-',2},   36,    0.597,    0.106}],     
+ { {erl_parse,set_line,2},                       36,    0.597,    0.106},     %
+ [{{erl_scan,set_attribute,3},                   36,    0.491,    0.110}]}.    
+
+{[{{erl_lint,start,2},                           26,    0.576,    0.080}],     
+ { {erl_lint,bool_option,4},                     26,    0.576,    0.080},     %
+ [{{lists,foldl,3},                              26,    0.496,    0.153}]}.    
+
+{[{{erl_lint,default_types,0},                    2,    0.568,    0.125},      
+  {{erl_lint,'-default_types/0-lc$^0/1-0-',1},  112,    0.000,    0.443}],     
+ { {erl_lint,'-default_types/0-lc$^0/1-0-',1},  114,    0.568,    0.568},     %
+ [{{erl_lint,'-default_types/0-lc$^0/1-0-',1},  112,    0.000,    0.443}]}.    
+
+{[{{io_lib_pretty,print_length,3},               12,    0.474,    0.031},      
+  {{io_lib_pretty,print,6},                       1,    0.078,    0.003}],     
+ { {io_lib,write,1},                             13,    0.552,    0.034},     %
+ [{{io_lib,write,2},                             13,    0.518,    0.040}]}.    
+
+{[{{shell,exprs,7},                               2,    0.537,    0.013}],     
+ { {io,requests,1},                               2,    0.537,    0.013},     %
+ [{{io,requests,2},                               2,    0.508,    0.010},      
+  {{io,default_output,0},                         2,    0.016,    0.011}]}.    
+
+{[{{io_lib,write,1},                             13,    0.518,    0.040}],     
+ { {io_lib,write,2},                             13,    0.518,    0.040},     %
+ [{{io_lib,write_atom,1},                        13,    0.478,    0.111}]}.    
+
+{[{{io,requests,1},                               2,    0.508,    0.010}],     
+ { {io,requests,2},                               2,    0.508,    0.010},     %
+ [{{io,execute_request,2},                        2,    0.420,    0.028},      
+  {{io,io_requests,2},                            2,    0.078,    0.006}]}.    
+
+{[{{erl_parse,set_line,2},                       36,    0.491,    0.110}],     
+ { {erl_scan,set_attribute,3},                   36,    0.491,    0.110},     %
+ [{{erl_scan,set_attr,3},                        36,    0.381,    0.217}]}.    
+
+{[{{erl_eval,expr,5},                             2,    0.483,    0.006}],     
+ { {erl_eval,expr_list,4},                        2,    0.483,    0.006},     %
+ [{{erl_eval,expr_list,6},                        2,    0.477,    0.022}]}.    
+
+{[{{io_lib,write,2},                             13,    0.478,    0.111}],     
+ { {io_lib,write_atom,1},                        13,    0.478,    0.111},     %
+ [{{io_lib,quote_atom,2},                        13,    0.333,    0.129},      
+  {{erlang,atom_to_list,1},                      13,    0.034,    0.034}]}.    
+
+{[{{erl_eval,expr_list,4},                        2,    0.477,    0.022},      
+  {{erl_eval,expr_list,6},                        2,    0.000,    0.011}],     
+ { {erl_eval,expr_list,6},                        4,    0.477,    0.033},     %
+ [{{erl_eval,merge_bindings,2},                   2,    0.024,    0.012},      
+  {{lists,reverse,1},                             2,    0.005,    0.005},      
+  {{erl_eval,expr_list,6},                        2,    0.000,    0.011},      
+  {{erl_eval,expr,5},                             2,    0.000,    0.109}]}.    
+
+{[{{erl_scan,set_attribute,3},                   36,    0.381,    0.217}],     
+ { {erl_scan,set_attr,3},                        36,    0.381,    0.217},     %
+ [{{erl_lint,'-zip_file_and_line/2-fun-0-',2},   36,    0.125,    0.125},      
+  {garbage_collect,                               1,    0.039,    0.039}]}.    
+
+{[{{dict,get_slot,2},                           118,    0.367,    0.367}],     
+ { {erlang,phash,2},                            118,    0.367,    0.367},     %
+ [ ]}.
+
+{[{{shell,pp,3},                                  2,    0.354,    0.013}],     
+ { {shell,columns,0},                             2,    0.354,    0.013},     %
+ [{{io,columns,0},                                2,    0.341,    0.012}]}.    
+
+{[{{shell,columns,0},                             2,    0.341,    0.012}],     
+ { {io,columns,0},                                2,    0.341,    0.012},     %
+ [{{io,columns,1},                                2,    0.316,    0.012},      
+  {{io,default_output,0},                         2,    0.013,    0.008}]}.    
+
+{[{{io_lib,write_atom,1},                        13,    0.333,    0.129}],     
+ { {io_lib,quote_atom,2},                        13,    0.333,    0.129},     %
+ [{{io_lib,name_chars,1},                        13,    0.165,    0.125},      
+  {{erl_scan,reserved_word,1},                   13,    0.039,    0.039}]}.    
+
+{[{{io,columns,0},                                2,    0.316,    0.012}],     
+ { {io,columns,1},                                2,    0.316,    0.012},     %
+ [{{io,request,2},                                2,    0.304,    0.013}]}.    
+
+{[{{io,columns,1},                                2,    0.304,    0.013}],     
+ { {io,request,2},                                2,    0.304,    0.013},     %
+ [{{io,execute_request,2},                        2,    0.285,    0.024},      
+  {{io,io_request,2},                             2,    0.006,    0.006}]}.    
+
+{[{{erl_lint,expr,3},                             2,    0.230,    0.054}],     
+ { {erl_lint,expand_package,2},                   2,    0.230,    0.054},     %
+ [{{dict,find,2},                                 2,    0.057,    0.019},      
+  {{packages,is_segmented,1},                     2,    0.042,    0.006},      
+  {{packages,is_valid,1},                         2,    0.040,    0.006},      
+  {{packages,concat,2},                           2,    0.019,    0.007},      
+  {{erlang,list_to_atom,1},                       2,    0.010,    0.010},      
+  {{erlang,atom_to_list,1},                       2,    0.004,    0.004},      
+  {{erl_lint,keyword_warning,3},                  2,    0.004,    0.004}]}.    
+
+{[{{erl_lint,start,2},                            2,    0.179,    0.025},      
+  {{gb_sets,from_list,1},                         4,    0.026,    0.011}],     
+ { {ordsets,from_list,1},                         6,    0.205,    0.036},     %
+ [{{lists,usort,1},                               6,    0.169,    0.029}]}.    
+
+{[{{erl_eval,expr,5},                            15,    0.170,    0.094},      
+  {{erl_eval,expr_list,6},                        2,    0.024,    0.012}],     
+ { {erl_eval,merge_bindings,2},                  17,    0.194,    0.106},     %
+ [{{lists,foldl,3},                              17,    0.046,    0.046},      
+  {{orddict,to_list,1},                          17,    0.042,    0.042}]}.    
+
+{[{{erl_lint,'-expr_list/3-fun-0-',3},           28,    0.181,    0.095}],     
+ { {erl_lint,vtmerge,2},                         28,    0.181,    0.095},     %
+ [{{orddict,merge,3},                            28,    0.086,    0.086}]}.    
+
+{[{{ordsets,from_list,1},                         6,    0.169,    0.029},      
+  {{erl_lint,pack_warnings,1},                    4,    0.011,    0.011}],     
+ { {lists,usort,1},                              10,    0.180,    0.040},     %
+ [{{lists,usplit_2,5},                            2,    0.140,    0.007}]}.    
+
+{[{{shell,prep_check,1},                         36,    0.087,    0.087},      
+  {{shell,used_records,1},                       36,    0.080,    0.080}],     
+ { {erlang,tuple_to_list,1},                     72,    0.167,    0.167},     %
+ [ ]}.
+
+{[{{io_lib,quote_atom,2},                        13,    0.165,    0.125},      
+  {{io_lib,name_chars,1},                         7,    0.000,    0.020}],     
+ { {io_lib,name_chars,1},                        20,    0.165,    0.145},     %
+ [{{io_lib,name_char,1},                          7,    0.020,    0.020},      
+  {{io_lib,name_chars,1},                         7,    0.000,    0.020}]}.    
+
+{[{{shell,prep_check,1},                         36,    0.154,    0.154}],     
+ { {erlang,list_to_tuple,1},                     36,    0.154,    0.154},     %
+ [ ]}.
+
+{[{{dict,on_bucket,3},                            1,    0.053,    0.053},      
+  {{erl_scan,set_attr,3},                         1,    0.039,    0.039},      
+  {{dict,store,3},                                1,    0.034,    0.034},      
+  {{shell,used_records,3},                        1,    0.026,    0.026}],     
+ { garbage_collect,                               4,    0.152,    0.152},     %
+ [ ]}.
+
+{[{{erl_lint,start,2},                            4,    0.149,    0.025}],     
+ { {gb_sets,from_list,1},                         4,    0.149,    0.025},     %
+ [{{gb_sets,from_ordset,1},                       4,    0.098,    0.021},      
+  {{ordsets,from_list,1},                         4,    0.026,    0.011}]}.    
+
+{[{{shell,exprs,7},                               2,    0.142,    0.035}],     
+ { {shell,result_will_be_saved,0},                2,    0.142,    0.035},     %
+ [{{shell,get_history_and_results,0},             2,    0.107,    0.020}]}.    
+
+{[{{lists,usort,1},                               2,    0.140,    0.007},      
+  {{lists,usplit_2_1,6},                          2,    0.000,    0.005},      
+  {{lists,usplit_2,5},                            4,    0.000,    0.014}],     
+ { {lists,usplit_2,5},                            8,    0.140,    0.026},     %
+ [{{lists,usplit_2_1,6},                          2,    0.119,    0.006},      
+  {{lists,umergel,3},                             2,    0.101,    0.016},      
+  {{lists,usplit_2,5},                            4,    0.000,    0.014}]}.    
+
+{[{{io_lib_pretty,print,6},                       1,    0.132,    0.006},      
+  {{io_lib_pretty,write_tail,2},                 11,    0.000,    0.027},      
+  {{io_lib_pretty,write_list,2},                  1,    0.000,    0.003}],     
+ { {io_lib_pretty,write,1},                      13,    0.132,    0.036},     %
+ [{{io_lib_pretty,write_list,2},                  1,    0.126,    0.010}]}.    
+
+{[{{erl_lint,exprs_opt,3},                        2,    0.130,    0.022}],     
+ { {erl_lint,return_status,1},                    2,    0.130,    0.022},     %
+ [{{erl_lint,pack_errors,1},                      2,    0.074,    0.020},      
+  {{erl_lint,pack_warnings,1},                    2,    0.034,    0.019}]}.    
+
+{[{{lists,foldl,3},                              52,    0.128,    0.128}],     
+ { {erl_lint,'-bool_option/4-fun-0-',4},         52,    0.128,    0.128},     %
+ [ ]}.
+
+{[{{io_lib_pretty,write,1},                       1,    0.126,    0.010}],     
+ { {io_lib_pretty,write_list,2},                  1,    0.126,    0.010},     %
+ [{{io_lib_pretty,write_tail,2},                  1,    0.113,    0.044},      
+  {{io_lib_pretty,write,1},                       1,    0.000,    0.003}]}.    
+
+{[{{erl_scan,set_attr,3},                        36,    0.125,    0.125}],     
+ { {erl_lint,'-zip_file_and_line/2-fun-0-',2},   36,    0.125,    0.125},     %
+ [ ]}.
+
+{[{{lists,usplit_2,5},                            2,    0.119,    0.006},      
+  {{lists,usplit_2_1,6},                          2,    0.000,    0.007}],     
+ { {lists,usplit_2_1,6},                          4,    0.119,    0.013},     %
+ [{{lists,usplit_2_1,6},                          2,    0.000,    0.007},      
+  {{lists,usplit_2,5},                            2,    0.000,    0.005}]}.    
+
+{[{{erl_lint,start,2},                            6,    0.070,    0.056},      
+  {{dict,from_list,1},                            6,    0.048,    0.033}],     
+ { {dict,new,0},                                 12,    0.118,    0.089},     %
+ [{{dict,mk_seg,1},                              12,    0.029,    0.029}]}.    
+
+{[{{io_lib_pretty,write_list,2},                  1,    0.113,    0.044},      
+  {{io_lib_pretty,write_tail,2},                 11,    0.000,    0.042}],     
+ { {io_lib_pretty,write_tail,2},                 12,    0.113,    0.086},     %
+ [{{io_lib_pretty,write_tail,2},                 11,    0.000,    0.042},      
+  {{io_lib_pretty,write,1},                      11,    0.000,    0.027}]}.    
+
+{[{{erl_lint,start,2},                            2,    0.111,    0.026},      
+  {{erl_lint,'-start/2-lc$^0/1-0-',1},           26,    0.000,    0.085}],     
+ { {erl_lint,'-start/2-lc$^0/1-0-',1},           28,    0.111,    0.111},     %
+ [{{erl_lint,'-start/2-lc$^0/1-0-',1},           26,    0.000,    0.085}]}.    
+
+{[{{shell,result_will_be_saved,0},                2,    0.107,    0.020}],     
+ { {shell,get_history_and_results,0},             2,    0.107,    0.020},     %
+ [{{shell,get_env,2},                             4,    0.083,    0.020},      
+  {{erlang,min,2},                                2,    0.004,    0.004}]}.    
+
+{[{{erl_lint,vtmerge,2},                         28,    0.086,    0.086},      
+  {{erl_lint,vtupdate,2},                         4,    0.018,    0.018}],     
+ { {orddict,merge,3},                            32,    0.104,    0.104},     %
+ [ ]}.
+
+{[{{lists,usplit_2,5},                            2,    0.101,    0.016},      
+  {{lists,umergel,3},                             2,    0.000,    0.006},      
+  {{lists,rumergel,3},                            2,    0.000,    0.007}],     
+ { {lists,umergel,3},                             6,    0.101,    0.029},     %
+ [{{lists,umerge2_2,4},                           2,    0.053,    0.006},      
+  {{lists,rumergel,3},                            2,    0.026,    0.014},      
+  {{lists,umergel,3},                             2,    0.000,    0.006}]}.    
+
+{[{{gb_sets,from_list,1},                         4,    0.098,    0.021}],     
+ { {gb_sets,from_ordset,1},                       4,    0.098,    0.021},     %
+ [{{gb_sets,balance_list,2},                      4,    0.077,    0.020}]}.    
+
+{[{{erl_eval,expr,5},                            32,    0.087,    0.087},      
+  {{fprof,just_call,2},                           1,    0.006,    0.006},      
+  {{erl_eval,do_apply,5},                         1,    0.003,    0.003}],     
+ { {erl_eval,ret_expr,3},                        34,    0.096,    0.096},     %
+ [ ]}.
+
+{[{{erl_eval,expand_module_name,2},               2,    0.051,    0.013},      
+  {{erl_lint,expand_package,2},                   2,    0.042,    0.006}],     
+ { {packages,is_segmented,1},                     4,    0.093,    0.019},     %
+ [{{packages,is_segmented_1,1},                   4,    0.069,    0.014},      
+  {{erlang,atom_to_list,1},                       2,    0.005,    0.005}]}.    
+
+{[{{erl_eval,expr,5},                             2,    0.085,    0.016}],     
+ { {erl_eval,expand_module_name,2},               2,    0.085,    0.016},     %
+ [{{packages,is_segmented,1},                     2,    0.051,    0.013},      
+  {{erl_eval,binding,2},                          2,    0.018,    0.013}]}.    
+
+{[{{shell,get_history_and_results,0},             4,    0.083,    0.020}],     
+ { {shell,get_env,2},                             4,    0.083,    0.020},     %
+ [{{application,get_env,2},                       4,    0.063,    0.015}]}.    
+
+{[{{io,requests,2},                               2,    0.078,    0.006}],     
+ { {io,io_requests,2},                            2,    0.078,    0.006},     %
+ [{{io,io_requests,4},                            2,    0.072,    0.016}]}.    
+
+{[{{erl_lint,pack_errors,1},                      2,    0.044,    0.019},      
+  {{erl_lint,return_status,1},                    2,    0.034,    0.019}],     
+ { {erl_lint,pack_warnings,1},                    4,    0.078,    0.038},     %
+ [{{erl_lint,'-pack_warnings/1-lc$^2/1-2-',1},    4,    0.015,    0.015},      
+  {{erl_lint,'-pack_warnings/1-lc$^0/1-0-',2},    4,    0.014,    0.014},      
+  {{lists,usort,1},                               4,    0.011,    0.011}]}.    
+
+{[{{gb_sets,from_ordset,1},                       4,    0.077,    0.020}],     
+ { {gb_sets,balance_list,2},                      4,    0.077,    0.020},     %
+ [{{gb_sets,balance_list_1,2},                    4,    0.057,    0.035}]}.    
+
+{[{{erl_lint,expr,3},                             2,    0.076,    0.020}],     
+ { {erl_lint,check_remote_function,5},            2,    0.076,    0.020},     %
+ [{{erl_lint,deprecated_function,5},              2,    0.033,    0.014},      
+  {{erl_lint,format_function,5},                  2,    0.017,    0.010},      
+  {{erl_lint,check_qlc_hrl,5},                    2,    0.006,    0.006}]}.    
+
+{[{{erl_lint,return_status,1},                    2,    0.074,    0.020}],     
+ { {erl_lint,pack_errors,1},                      2,    0.074,    0.020},     %
+ [{{erl_lint,pack_warnings,1},                    2,    0.044,    0.019},      
+  {{lists,mapfoldl,3},                            2,    0.006,    0.006},      
+  {{lists,map,2},                                 2,    0.004,    0.004}]}.    
+
+{[{{io,io_requests,2},                            2,    0.072,    0.016},      
+  {{io,io_requests,4},                            2,    0.000,    0.010}],     
+ { {io,io_requests,4},                            4,    0.072,    0.026},     %
+ [{{io,io_request,2},                             4,    0.046,    0.019},      
+  {{io,io_requests,4},                            2,    0.000,    0.010}]}.    
+
+{[{{packages,is_segmented,1},                     4,    0.069,    0.014},      
+  {{packages,is_segmented_1,1},                  20,    0.000,    0.055}],     
+ { {packages,is_segmented_1,1},                  24,    0.069,    0.069},     %
+ [{{packages,is_segmented_1,1},                  20,    0.000,    0.055}]}.    
+
+{[{{erl_eval,expr,5},                             2,    0.063,    0.012}],     
+ { {erl_eval,do_apply,5},                         2,    0.063,    0.012},     %
+ [{{shell,'-eval_loop/3-fun-0-',3},               2,    0.048,    0.006},      
+  {{erl_eval,ret_expr,3},                         1,    0.003,    0.003}]}.    
+
+{[{{shell,get_env,2},                             4,    0.063,    0.015}],     
+ { {application,get_env,2},                       4,    0.063,    0.015},     %
+ [{{application_controller,get_env,2},            4,    0.048,    0.025}]}.    
+
+{[{{gb_sets,balance_list,2},                      4,    0.057,    0.035},      
+  {{gb_sets,balance_list_1,2},                    8,    0.000,    0.022}],     
+ { {gb_sets,balance_list_1,2},                   12,    0.057,    0.057},     %
+ [{{gb_sets,balance_list_1,2},                    8,    0.000,    0.022}]}.    
+
+{[{undefined,                                     0,    0.033,    0.025},      
+  {{shell,exprs,7},                               0,    0.015,    0.009},      
+  {{fprof,call,1},                                1,    0.009,    0.004}],     
+ { {fprof,just_call,2},                           1,    0.057,    0.038},     %
+ [{{erlang,demonitor,1},                          1,    0.008,    0.008},      
+  {{erl_eval,ret_expr,3},                         1,    0.006,    0.006},      
+  {{erlang,monitor,2},                            1,    0.005,    0.005}]}.    
+
+{[{{erl_lint,expand_package,2},                   2,    0.057,    0.019}],     
+ { {dict,find,2},                                 2,    0.057,    0.019},     %
+ [{{dict,get_slot,2},                             2,    0.020,    0.013},      
+  {{dict,get_bucket,2},                           2,    0.013,    0.006},      
+  {{dict,find_val,2},                             2,    0.005,    0.005}]}.    
+
+{[{{shell,check_command,2},                       2,    0.029,    0.016},      
+  {{shell,expr,4},                                2,    0.027,    0.018}],     
+ { {shell,strip_bindings,1},                      4,    0.056,    0.034},     %
+ [{{shell,'-strip_bindings/1-lc$^0/1-0-',1},      4,    0.011,    0.011},      
+  {{erlang,'--',2},                               4,    0.011,    0.011}]}.    
+
+{[{{lists,umergel,3},                             2,    0.053,    0.006},      
+  {{lists,umerge2_1,5},                           4,    0.000,    0.016}],     
+ { {lists,umerge2_2,4},                           6,    0.053,    0.022},     %
+ [{{lists,umerge2_1,5},                           4,    0.047,    0.013},      
+  {{lists,reverse,2},                             2,    0.005,    0.005}]}.    
+
+{[{{erl_eval,merge_bindings,2},                  17,    0.042,    0.042},      
+  {{erl_eval,bindings,1},                         4,    0.010,    0.010}],     
+ { {orddict,to_list,1},                          21,    0.052,    0.052},     %
+ [ ]}.
+
+{[{{io,io_requests,4},                            4,    0.046,    0.019},      
+  {{io,request,2},                                2,    0.006,    0.006}],     
+ { {io,io_request,2},                             6,    0.052,    0.025},     %
+ [{{io,bc_req,3},                                 2,    0.022,    0.018},      
+  {{io_lib,nl,0},                                 2,    0.005,    0.005}]}.    
+
+{[{{erl_lint,start,2},                            2,    0.051,    0.009}],     
+ { {erl_lint,value_option,7},                     2,    0.051,    0.009},     %
+ [{{lists,foldl,3},                               2,    0.042,    0.012}]}.    
+
+{[{{erl_eval,do_apply,5},                         2,    0.048,    0.006}],     
+ { {shell,'-eval_loop/3-fun-0-',3},               2,    0.048,    0.006},     %
+ [{{shell,apply_fun,3},                           2,    0.042,    0.008}]}.    
+
+{[{{application,get_env,2},                       4,    0.048,    0.025}],     
+ { {application_controller,get_env,2},            4,    0.048,    0.025},     %
+ [{{ets,lookup,2},                                4,    0.023,    0.023}]}.    
+
+{[{{lists,umerge2_2,4},                           4,    0.047,    0.013},      
+  {{lists,umerge2_1,5},                           4,    0.000,    0.013}],     
+ { {lists,umerge2_1,5},                           8,    0.047,    0.026},     %
+ [{{lists,umerge2_2,4},                           4,    0.000,    0.016},      
+  {{lists,umerge2_1,5},                           4,    0.000,    0.013}]}.    
+
+{[{{io_lib,write_atom,1},                        13,    0.034,    0.034},      
+  {{packages,is_segmented,1},                     2,    0.005,    0.005},      
+  {{erl_lint,expand_package,2},                   2,    0.004,    0.004}],     
+ { {erlang,atom_to_list,1},                      17,    0.043,    0.043},     %
+ [ ]}.
+
+{[{{shell,'-eval_loop/3-fun-0-',3},               2,    0.042,    0.008}],     
+ { {shell,apply_fun,3},                           2,    0.042,    0.008},     %
+ [{{fprof,trace,1},                               1,    0.025,    0.004},      
+  {{lists,reverse,1},                             1,    0.009,    0.007}]}.    
+
+{[{{erl_lint,expand_package,2},                   2,    0.040,    0.006}],     
+ { {packages,is_valid,1},                         2,    0.040,    0.006},     %
+ [{{packages,is_valid_1,1},                       2,    0.034,    0.006}]}.    
+
+{[{{erl_lint,expr,3},                            15,    0.036,    0.036},      
+  {{erl_lint,expand_package,2},                   2,    0.004,    0.004}],     
+ { {erl_lint,keyword_warning,3},                 17,    0.040,    0.040},     %
+ [ ]}.
+
+{[{{io_lib_pretty,print_length_list,3},           1,    0.039,    0.004}],     
+ { {io_lib_pretty,list_length,2},                 1,    0.039,    0.004},     %
+ [{{io_lib_pretty,list_length_tail,2},            1,    0.035,    0.003}]}.    
+
+{[{{io_lib,quote_atom,2},                        13,    0.039,    0.039}],     
+ { {erl_scan,reserved_word,1},                   13,    0.039,    0.039},     %
+ [ ]}.
+
+{[{{erl_lint,start,2},                            2,    0.037,    0.015},      
+  {{erl_lint,'-start/2-lc$^1/1-1-',1},            6,    0.000,    0.022}],     
+ { {erl_lint,'-start/2-lc$^1/1-1-',1},            8,    0.037,    0.037},     %
+ [{{erl_lint,'-start/2-lc$^1/1-1-',1},            6,    0.000,    0.022}]}.    
+
+{[{{io_lib_pretty,list_length,2},                 1,    0.035,    0.003},      
+  {{io_lib_pretty,list_length_tail,2},           11,    0.000,    0.032}],     
+ { {io_lib_pretty,list_length_tail,2},           12,    0.035,    0.035},     %
+ [{{io_lib_pretty,list_length_tail,2},           11,    0.000,    0.032}]}.    
+
+{[{{packages,is_valid,1},                         2,    0.034,    0.006},      
+  {{packages,is_valid_1,1},                      10,    0.000,    0.028}],     
+ { {packages,is_valid_1,1},                      12,    0.034,    0.034},     %
+ [{{packages,is_valid_1,1},                      10,    0.000,    0.028}]}.    
+
+{[{{erl_lint,check_remote_function,5},            2,    0.033,    0.014}],     
+ { {erl_lint,deprecated_function,5},              2,    0.033,    0.014},     %
+ [{{otp_internal,obsolete,3},                     2,    0.019,    0.012}]}.    
+
+{[{{shell,eval_loop,3},                           2,    0.031,    0.022}],     
+ { {shell,local_func_handler,3},                  2,    0.031,    0.022},     %
+ [{{shell,'-local_func_handler/3-fun-1-',4},      2,    0.009,    0.009}]}.    
+
+{[{{erl_lint,exprs,3},                            4,    0.031,    0.013}],     
+ { {erl_lint,vtupdate,2},                         4,    0.031,    0.013},     %
+ [{{orddict,merge,3},                             4,    0.018,    0.018}]}.    
+
+{[{{erl_lint,start,2},                            2,    0.029,    0.007},      
+  {{ordsets,is_element,2},                        8,    0.000,    0.022}],     
+ { {ordsets,is_element,2},                       10,    0.029,    0.029},     %
+ [{{ordsets,is_element,2},                        8,    0.000,    0.022}]}.    
+
+{[{{io,requests,1},                               2,    0.016,    0.011},      
+  {{io,columns,0},                                2,    0.013,    0.008}],     
+ { {io,default_output,0},                         4,    0.029,    0.019},     %
+ [{{erlang,group_leader,0},                       4,    0.010,    0.010}]}.    
+
+{[{{dict,new,0},                                 12,    0.029,    0.029}],     
+ { {dict,mk_seg,1},                              12,    0.029,    0.029},     %
+ [ ]}.
+
+{[{{io_lib_pretty,print_length,3},               12,    0.028,    0.028}],     
+ { {erlang,iolist_size,1},                       12,    0.028,    0.028},     %
+ [ ]}.
+
+{[{{lists,umergel,3},                             2,    0.026,    0.014}],     
+ { {lists,rumergel,3},                            2,    0.026,    0.014},     %
+ [{{lists,reverse,2},                             2,    0.005,    0.005},      
+  {{lists,umergel,3},                             2,    0.000,    0.007}]}.    
+
+{[{{shell,apply_fun,3},                           1,    0.025,    0.004}],     
+ { {fprof,trace,1},                               1,    0.025,    0.004},     %
+ [{{fprof,call,1},                                1,    0.021,    0.007}]}.    
+
+{[{{io,wait_io_mon_reply,2},                      4,    0.017,    0.017},      
+  {{fprof,just_call,2},                           1,    0.008,    0.008}],     
+ { {erlang,demonitor,1},                          5,    0.025,    0.025},     %
+ [ ]}.
+
+{[{{io,execute_request,2},                        4,    0.019,    0.019},      
+  {{fprof,just_call,2},                           1,    0.005,    0.005}],     
+ { {erlang,monitor,2},                            5,    0.024,    0.024},     %
+ [ ]}.
+
+{[{{application_controller,get_env,2},            4,    0.023,    0.023}],     
+ { {ets,lookup,2},                                4,    0.023,    0.023},     %
+ [ ]}.
+
+{[{{erl_lint,exprs_opt,3},                        2,    0.013,    0.007},      
+  {{shell,exprs,7},                               2,    0.009,    0.005}],     
+ { {orddict,from_list,1},                         4,    0.022,    0.012},     %
+ [{{lists,foldl,3},                               4,    0.010,    0.010}]}.    
+
+{[{{io,io_request,2},                             2,    0.022,    0.018}],     
+ { {io,bc_req,3},                                 2,    0.022,    0.018},     %
+ [{{net_kernel,dflag_unicode_io,1},               2,    0.004,    0.004}]}.    
+
+{[{{erl_eval,check_command,2},                    2,    0.013,    0.008},      
+  {{shell,exprs,7},                               2,    0.009,    0.004}],     
+ { {erl_eval,bindings,1},                         4,    0.022,    0.012},     %
+ [{{orddict,to_list,1},                           4,    0.010,    0.010}]}.    
+
+{[{{fprof,trace,1},                               1,    0.021,    0.007}],     
+ { {fprof,call,1},                                1,    0.021,    0.007},     %
+ [{{fprof,just_call,2},                           1,    0.009,    0.004},      
+  {{erlang,whereis,1},                            1,    0.005,    0.005}]}.    
+
+{[{{io_lib,name_chars,1},                         7,    0.020,    0.020}],     
+ { {io_lib,name_char,1},                          7,    0.020,    0.020},     %
+ [ ]}.
+
+{[{{erl_lint,expand_package,2},                   2,    0.019,    0.007}],     
+ { {packages,concat,2},                           2,    0.019,    0.007},     %
+ [{{packages,concat,1},                           2,    0.012,    0.006}]}.    
+
+{[{{erl_lint,deprecated_function,5},              2,    0.019,    0.012}],     
+ { {otp_internal,obsolete,3},                     2,    0.019,    0.012},     %
+ [{{otp_internal,obsolete_1,3},                   2,    0.007,    0.007}]}.    
+
+{[{{erl_eval,expand_module_name,2},               2,    0.018,    0.013}],     
+ { {erl_eval,binding,2},                          2,    0.018,    0.013},     %
+ [{{orddict,find,2},                              2,    0.005,    0.005}]}.    
+
+{[{{erl_lint,start,2},                            2,    0.017,    0.013}],     
+ { {sets,new,0},                                  2,    0.017,    0.013},     %
+ [{{sets,mk_seg,1},                               2,    0.004,    0.004}]}.    
+
+{[{{erl_lint,check_remote_function,5},            2,    0.017,    0.010}],     
+ { {erl_lint,format_function,5},                  2,    0.017,    0.010},     %
+ [{{erl_lint,is_format_function,2},               2,    0.007,    0.007}]}.    
+
+{[{{erl_lint,start,2},                            6,    0.015,    0.015}],     
+ { {erl_lint,pseudolocals,0},                     6,    0.015,    0.015},     %
+ [ ]}.
+
+{[{{erl_lint,pack_warnings,1},                    4,    0.015,    0.015}],     
+ { {erl_lint,'-pack_warnings/1-lc$^2/1-2-',1},    4,    0.015,    0.015},     %
+ [ ]}.
+
+{[{{shell,apply_fun,3},                           1,    0.009,    0.007},      
+  {{erl_eval,expr_list,6},                        2,    0.005,    0.005}],     
+ { {lists,reverse,1},                             3,    0.014,    0.012},     %
+ [{{lists,reverse,2},                             1,    0.002,    0.002}]}.    
+
+{[{{erl_lint,pack_warnings,1},                    4,    0.014,    0.014}],     
+ { {erl_lint,'-pack_warnings/1-lc$^0/1-0-',2},    4,    0.014,    0.014},     %
+ [ ]}.
+
+{[{{dict,find,2},                                 2,    0.013,    0.006}],     
+ { {dict,get_bucket,2},                           2,    0.013,    0.006},     %
+ [{{dict,get_bucket_s,2},                         2,    0.007,    0.007}]}.    
+
+{[{{shell,used_record_defs,2},                    2,    0.012,    0.006}],     
+ { {shell,record_defs,2},                         2,    0.012,    0.006},     %
+ [{{lists,flatmap,2},                             2,    0.006,    0.006}]}.    
+
+{[{{packages,concat,2},                           2,    0.012,    0.006}],     
+ { {packages,concat,1},                           2,    0.012,    0.006},     %
+ [{{packages,concat_1,1},                         2,    0.006,    0.006}]}.    
+
+{[{{lists,umerge2_2,4},                           2,    0.005,    0.005},      
+  {{lists,rumergel,3},                            2,    0.005,    0.005},      
+  {{lists,reverse,1},                             1,    0.002,    0.002}],     
+ { {lists,reverse,2},                             5,    0.012,    0.012},     %
+ [ ]}.
+
+{[{{shell,strip_bindings,1},                      4,    0.011,    0.011}],     
+ { {shell,'-strip_bindings/1-lc$^0/1-0-',1},      4,    0.011,    0.011},     %
+ [ ]}.
+
+{[{{shell,strip_bindings,1},                      4,    0.011,    0.011}],     
+ { {erlang,'--',2},                               4,    0.011,    0.011},     %
+ [ ]}.
+
+{[{{lists,foldl,3},                               4,    0.011,    0.011}],     
+ { {erl_lint,'-value_option/7-fun-0-',7},         4,    0.011,    0.011},     %
+ [ ]}.
+
+{[{{erl_lint,expand_package,2},                   2,    0.010,    0.010}],     
+ { {erlang,list_to_atom,1},                       2,    0.010,    0.010},     %
+ [ ]}.
+
+{[{{io,default_output,0},                         4,    0.010,    0.010}],     
+ { {erlang,group_leader,0},                       4,    0.010,    0.010},     %
+ [ ]}.
+
+{[{{shell,local_func_handler,3},                  2,    0.009,    0.009}],     
+ { {shell,'-local_func_handler/3-fun-1-',4},      2,    0.009,    0.009},     %
+ [ ]}.
+
+{[{{shell,exprs,7},                               2,    0.008,    0.008}],     
+ { {shell,'-exprs/7-lc$^0/1-0-',1},               2,    0.008,    0.008},     %
+ [ ]}.
+
+{[{{io_lib_pretty,print_length,3},                1,    0.008,    0.004}],     
+ { {io_lib_pretty,printable_list,2},              1,    0.008,    0.004},     %
+ [{{io_lib,printable_list,1},                     1,    0.004,    0.004}]}.    
+
+{[{{otp_internal,obsolete,3},                     2,    0.007,    0.007}],     
+ { {otp_internal,obsolete_1,3},                   2,    0.007,    0.007},     %
+ [ ]}.
+
+{[{{erl_lint,format_function,5},                  2,    0.007,    0.007}],     
+ { {erl_lint,is_format_function,2},               2,    0.007,    0.007},     %
+ [ ]}.
+
+{[{{dict,get_bucket,2},                           2,    0.007,    0.007}],     
+ { {dict,get_bucket_s,2},                         2,    0.007,    0.007},     %
+ [ ]}.
+
+{[{{shell,pp,3},                                  2,    0.006,    0.006}],     
+ { {shell,record_print_fun,1},                    2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{packages,concat,1},                           2,    0.006,    0.006}],     
+ { {packages,concat_1,1},                         2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{erl_lint,pack_errors,1},                      2,    0.006,    0.006}],     
+ { {lists,mapfoldl,3},                            2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{shell,record_defs,2},                         2,    0.006,    0.006}],     
+ { {lists,flatmap,2},                             2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{erl_lint,check_remote_function,5},            2,    0.006,    0.006}],     
+ { {erl_lint,check_qlc_hrl,5},                    2,    0.006,    0.006},     %
+ [ ]}.
+
+{[{{shell,exprs,7},                               2,    0.005,    0.005}],     
+ { {shell,record_bindings,2},                     2,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{erl_eval,binding,2},                          2,    0.005,    0.005}],     
+ { {orddict,find,2},                              2,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{io,io_request,2},                             2,    0.005,    0.005}],     
+ { {io_lib,nl,0},                                 2,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{fprof,call,1},                                1,    0.005,    0.005}],     
+ { {erlang,whereis,1},                            1,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{shell,exprs,7},                               2,    0.005,    0.005}],     
+ { {erlang,get,0},                                2,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{erl_eval,expr,5},                             2,    0.005,    0.005}],     
+ { {erl_internal,bif,3},                          2,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{dict,find,2},                                 2,    0.005,    0.005}],     
+ { {dict,find_val,2},                             2,    0.005,    0.005},     %
+ [ ]}.
+
+{[{{shell,exprs,7},                               2,    0.004,    0.004}],     
+ { {shell,expand_records,2},                      2,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{sets,new,0},                                  2,    0.004,    0.004}],     
+ { {sets,mk_seg,1},                               2,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{io,bc_req,3},                                 2,    0.004,    0.004}],     
+ { {net_kernel,dflag_unicode_io,1},               2,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{erl_lint,pack_errors,1},                      2,    0.004,    0.004}],     
+ { {lists,map,2},                                 2,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{io_lib_pretty,printable_list,2},              1,    0.004,    0.004}],     
+ { {io_lib,printable_list,1},                     1,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{shell,get_history_and_results,0},             2,    0.004,    0.004}],     
+ { {erlang,min,2},                                2,    0.004,    0.004},     %
+ [ ]}.
+
+{[{{io_lib_pretty,print,6},                       1,    0.003,    0.003}],     
+ { {io_lib_pretty,max_cs,2},                      1,    0.003,    0.003},     %
+ [ ]}.
+
+{[ ],
+ { undefined,                                     0,    0.000,    0.000},     %
+ [{{shell,exprs,7},                               0,31686.019,    0.021},      
+  {{fprof,just_call,2},                           0,    0.033,    0.025}]}.    
+
+
