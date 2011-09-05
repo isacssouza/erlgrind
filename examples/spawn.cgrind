@@ -1,0 +1,1644 @@
+events: Instructions
+fl=file
+fn={escript,eval_exprs,5}
+1 12
+cfl=file
+cfn={erl_eval,expr,5}
+calls=3 1
+1 35276
+cfl=file
+cfn={fprof,just_call,2}
+calls=0 1
+1 5
+cfl=file
+cfn={escript,eval_exprs,5}
+calls=3 1
+1 0
+fl=file
+fn={erl_eval,local_func,5}
+1 0
+cfl=file
+cfn={escript,eval_exprs,5}
+calls=0 1
+1 35288
+fl=file
+fn={erl_eval,expr,5}
+1 63
+cfl=file
+cfn={erl_eval,bif,5}
+calls=2 1
+1 27629
+cfl=file
+cfn={erl_eval,expr_list,4}
+calls=3 1
+1 7224
+cfl=file
+cfn={erl_lint,used_vars,2}
+calls=2 1
+1 6279
+cfl=file
+cfn={erl_eval,hide_calls,2}
+calls=2 1
+1 842
+cfl=file
+cfn={erl_eval,do_apply,5}
+calls=1 1
+1 331
+cfl=file
+cfn={erl_eval,expand_module_name,2}
+calls=1 1
+1 32
+cfl=file
+cfn={erl_eval,merge_bindings,2}
+calls=2 1
+1 19
+cfl=file
+cfn={erl_eval,ret_expr,3}
+calls=7 1
+1 12
+cfl=file
+cfn={erl_internal,bif,3}
+calls=1 1
+1 5
+cfl=file
+cfn={erl_internal,bif,2}
+calls=2 1
+1 5
+cfl=file
+cfn={orddict,filter,2}
+calls=2 1
+1 3
+cfl=file
+cfn={erl_eval,expr,5}
+calls=4 1
+1 0
+fl=file
+fn={erl_eval,do_apply,5}
+1 19
+cfl=file
+cfn={erlang,spawn,1}
+calls=2 1
+1 27607
+cfl=file
+cfn={fprof,trace,1}
+calls=1 1
+1 327
+cfl=file
+cfn={erl_eval,ret_expr,3}
+calls=2 1
+1 4
+fl=file
+fn={erl_eval,bif,5}
+1 3
+cfl=file
+cfn={erl_eval,do_apply,5}
+calls=2 1
+1 27626
+fl=file
+fn={erlang,spawn,1}
+1 9
+cfl=file
+cfn={erlang,spawn,3}
+calls=2 1
+1 27598
+fl=file
+fn={erlang,spawn,3}
+1 27598
+fl=file
+fn={erl_eval,expr_list,4}
+1 5
+cfl=file
+cfn={erl_eval,expr_list,6}
+calls=3 1
+1 7219
+fl=file
+fn={erl_eval,expr_list,6}
+1 24
+cfl=file
+cfn={erl_eval,merge_bindings,2}
+calls=3 1
+1 21
+cfl=file
+cfn={lists,reverse,1}
+calls=3 1
+1 6
+cfl=file
+cfn={erl_eval,expr_list,6}
+calls=3 1
+1 0
+cfl=file
+cfn={erl_eval,expr,5}
+calls=3 1
+1 0
+fl=file
+fn={erl_lint,used_vars,2}
+1 16
+cfl=file
+cfn={erl_lint,start,0}
+calls=2 1
+1 4742
+cfl=file
+cfn={erl_lint,exprs,3}
+calls=2 1
+1 912
+cfl=file
+cfn={erl_lint,zip_file_and_line,2}
+calls=2 1
+1 601
+cfl=file
+cfn={orddict,from_list,1}
+calls=2 1
+1 4
+cfl=file
+cfn={lists,foldl,3}
+calls=4 1
+1 4
+fl=file
+fn={lists,foldl,3}
+1 470
+cfl=file
+cfn={dict,'-from_list/1-fun-0-',2}
+calls=116 1
+1 3766
+cfl=file
+cfn={erl_lint,'-fun_clauses/3-fun-0-',3}
+calls=2 1
+1 840
+cfl=file
+cfn={erl_lint,'-expr_list/3-fun-0-',3}
+calls=22 1
+1 408
+cfl=file
+cfn={lists,foldl,3}
+calls=140 1
+1 0
+fl=file
+fn={erl_lint,start,0}
+1 2
+cfl=file
+cfn={erl_lint,start,2}
+calls=2 1
+1 4740
+fl=file
+fn={erl_lint,start,2}
+1 64
+cfl=file
+cfn={erl_lint,default_types,0}
+calls=2 1
+1 4255
+cfl=file
+cfn={dict,from_list,1}
+calls=4 1
+1 124
+cfl=file
+cfn={ordsets,from_list,1}
+calls=2 1
+1 65
+cfl=file
+cfn={gb_sets,from_list,1}
+calls=4 1
+1 59
+cfl=file
+cfn={erl_lint,'-start/2-lc$^0/1-0-',1}
+calls=2 1
+1 59
+cfl=file
+cfn={erl_lint,bool_option,4}
+calls=26 1
+1 56
+cfl=file
+cfn={dict,new,0}
+calls=6 1
+1 18
+cfl=file
+cfn={erl_lint,'-start/2-lc$^1/1-1-',1}
+calls=2 1
+1 14
+cfl=file
+cfn={ordsets,is_element,2}
+calls=2 1
+1 10
+cfl=file
+cfn={sets,new,0}
+calls=2 1
+1 6
+cfl=file
+cfn={erl_lint,pseudolocals,0}
+calls=6 1
+1 6
+cfl=file
+cfn={erl_lint,value_option,7}
+calls=2 1
+1 4
+fl=file
+fn={erl_lint,default_types,0}
+1 4
+cfl=file
+cfn={dict,from_list,1}
+calls=2 1
+1 3999
+cfl=file
+cfn={erl_lint,'-default_types/0-lc$^0/1-0-',1}
+calls=2 1
+1 252
+fl=file
+fn={dict,from_list,1}
+1 12
+cfl=file
+cfn={lists,foldl,3}
+calls=6 1
+1 4093
+cfl=file
+cfn={dict,new,0}
+calls=6 1
+1 18
+fl=file
+fn={dict,'-from_list/1-fun-0-',2}
+1 155
+cfl=file
+cfn={dict,store,3}
+calls=116 1
+1 3611
+fl=file
+fn={dict,store,3}
+1 430
+cfl=file
+cfn={dict,on_bucket,3}
+calls=116 1
+1 2187
+cfl=file
+cfn={dict,maybe_expand,2}
+calls=116 1
+1 572
+cfl=file
+cfn={dict,get_slot,2}
+calls=116 1
+1 422
+fl=file
+fn={dict,on_bucket,3}
+1 729
+cfl=file
+cfn={dict,'-store/3-fun-0-',3}
+calls=116 1
+1 1014
+cfl=file
+cfn={erlang,setelement,3}
+calls=348 1
+1 409
+cfl=file
+cfn=garbage_collect
+calls=2 1
+1 34
+fl=file
+fn={dict,'-store/3-fun-0-',3}
+1 139
+cfl=file
+cfn={dict,store_bkt_val,3}
+calls=116 1
+1 876
+fl=file
+fn={erl_lint,exprs,3}
+1 65
+cfl=file
+cfn={erl_lint,expr,3}
+calls=4 1
+1 879
+cfl=file
+cfn={erl_lint,vtupdate,2}
+calls=8 1
+1 27
+cfl=file
+cfn={erl_lint,exprs,3}
+calls=4 1
+1 0
+fl=file
+fn={erl_lint,expr,3}
+1 81
+cfl=file
+cfn={erl_lint,fun_clauses,3}
+calls=2 1
+1 864
+cfl=file
+cfn={erl_lint,expr_list,3}
+calls=12 1
+1 419
+cfl=file
+cfn={erl_lint,expand_package,2}
+calls=2 1
+1 94
+cfl=file
+cfn={erl_lint,check_remote_function,5}
+calls=2 1
+1 29
+cfl=file
+cfn={erl_lint,keyword_warning,3}
+calls=12 1
+1 18
+cfl=file
+cfn={erl_lint,vtupdate,2}
+calls=2 1
+1 6
+fl=file
+fn={dict,store_bkt_val,3}
+1 876
+cfl=file
+cfn={dict,store_bkt_val,3}
+calls=310 1
+1 0
+fl=file
+fn={erl_lint,fun_clauses,3}
+1 10
+cfl=file
+cfn={lists,foldl,3}
+calls=2 1
+1 848
+cfl=file
+cfn={erlang,setelement,3}
+calls=4 1
+1 6
+fl=file
+fn={erl_eval,hide_calls,2}
+1 7
+cfl=file
+cfn={erl_eval,hide,3}
+calls=2 1
+1 828
+cfl=file
+cfn={dict,new,0}
+calls=2 1
+1 7
+fl=file
+fn={erl_lint,'-fun_clauses/3-fun-0-',3}
+1 8
+cfl=file
+cfn={erl_lint,fun_clause,3}
+calls=2 1
+1 825
+cfl=file
+cfn={erl_lint,vtmerge,2}
+calls=2 1
+1 7
+fl=file
+fn={erl_eval,hide,3}
+1 752
+cfl=file
+cfn={erlang,tuple_to_list,1}
+calls=36 1
+1 40
+cfl=file
+cfn={erlang,list_to_tuple,1}
+calls=36 1
+1 36
+cfl=file
+cfn={erl_eval,hide,3}
+calls=292 1
+1 0
+fl=file
+fn={erl_lint,fun_clause,3}
+1 43
+cfl=file
+cfn={erl_lint,shadow_vars,4}
+calls=2 1
+1 37
+cfl=file
+cfn={erl_lint,check_old_unused_vars,3}
+calls=2 1
+1 33
+cfl=file
+cfn={erl_lint,check_unused_vars,3}
+calls=2 1
+1 28
+cfl=file
+cfn={erl_lint,vtupdate,2}
+calls=8 1
+1 20
+cfl=file
+cfn={erl_lint,vtsubtract,2}
+calls=4 1
+1 19
+cfl=file
+cfn={erl_lint,vtold,2}
+calls=4 1
+1 15
+cfl=file
+cfn={erl_lint,vtmerge,2}
+calls=2 1
+1 7
+cfl=file
+cfn={erl_lint,guard,3}
+calls=2 1
+1 5
+cfl=file
+cfn={erl_lint,head,4}
+calls=2 1
+1 2
+cfl=file
+cfn={erl_lint,exprs,3}
+calls=2 1
+1 0
+fl=file
+fn={erl_lint,zip_file_and_line,2}
+1 2
+cfl=file
+cfn={erl_lint,modify_line,2}
+calls=2 1
+1 599
+fl=file
+fn={erl_lint,modify_line,2}
+1 2
+cfl=file
+cfn={erl_lint,modify_line1,2}
+calls=2 1
+1 597
+fl=file
+fn={erl_lint,modify_line1,2}
+1 198
+cfl=file
+cfn={erl_lint,'-zip_file_and_line/2-fun-1-',2}
+calls=34 1
+1 231
+cfl=file
+cfn=suspend
+calls=1 1
+1 168
+cfl=file
+cfn={erl_lint,modify_line1,2}
+calls=68 1
+1 0
+fl=file
+fn={dict,maybe_expand,2}
+1 136
+cfl=file
+cfn={dict,maybe_expand_aux,2}
+calls=116 1
+1 436
+fl=file
+fn={erlang,setelement,3}
+1 552
+fl=file
+fn=suspend
+1 0
+fl=file
+fn={dict,maybe_expand_aux,2}
+1 279
+cfl=file
+cfn={erlang,setelement,3}
+calls=116 1
+1 137
+cfl=file
+cfn=garbage_collect
+calls=1 1
+1 20
+fl=file
+fn={dict,get_slot,2}
+1 277
+cfl=file
+cfn={erlang,phash,2}
+calls=118 1
+1 152
+fl=file
+fn={erl_lint,expr_list,3}
+1 20
+cfl=file
+cfn={lists,foldl,3}
+calls=12 1
+1 0
+fl=file
+fn={erl_lint,'-expr_list/3-fun-0-',3}
+1 158
+cfl=file
+cfn={erl_lint,vtmerge,2}
+calls=22 1
+1 79
+cfl=file
+cfn={erl_lint,expr,3}
+calls=22 1
+1 0
+fl=file
+fn={fprof,just_call,2}
+1 26
+cfl=file
+cfn=suspend
+calls=1 1
+1 300
+cfl=file
+cfn={erlang,demonitor,1}
+calls=1 1
+1 5
+cfl=file
+cfn={erlang,monitor,2}
+calls=1 1
+1 4
+cfl=file
+cfn={erl_eval,ret_expr,3}
+calls=1 1
+1 1
+fl=file
+fn={fprof,trace,1}
+1 3
+cfl=file
+cfn={fprof,call,1}
+calls=1 1
+1 324
+fl=file
+fn={fprof,call,1}
+1 5
+cfl=file
+cfn={fprof,just_call,2}
+calls=1 1
+1 315
+cfl=file
+cfn={erlang,whereis,1}
+calls=1 1
+1 4
+fl=file
+fn={erl_lint,'-default_types/0-lc$^0/1-0-',1}
+1 252
+cfl=file
+cfn={erl_lint,'-default_types/0-lc$^0/1-0-',1}
+calls=112 1
+1 0
+fl=file
+fn={erl_lint,'-zip_file_and_line/2-fun-1-',2}
+1 39
+cfl=file
+cfn={erl_parse,set_line,2}
+calls=34 1
+1 192
+fl=file
+fn={erl_parse,set_line,2}
+1 41
+cfl=file
+cfn={erl_scan,set_attribute,3}
+calls=34 1
+1 151
+fl=file
+fn={erlang,phash,2}
+1 152
+fl=file
+fn={erl_scan,set_attribute,3}
+1 44
+cfl=file
+cfn={erl_scan,set_attr,3}
+calls=34 1
+1 107
+fl=file
+fn={erl_scan,set_attr,3}
+1 73
+cfl=file
+cfn={erl_lint,'-zip_file_and_line/2-fun-0-',2}
+calls=34 1
+1 34
+fl=file
+fn={erl_lint,expand_package,2}
+1 22
+cfl=file
+cfn={dict,find,2}
+calls=2 1
+1 23
+cfl=file
+cfn={packages,is_segmented,1}
+calls=2 1
+1 17
+cfl=file
+cfn={packages,is_valid,1}
+calls=2 1
+1 16
+cfl=file
+cfn={packages,concat,2}
+calls=2 1
+1 7
+cfl=file
+cfn={erlang,list_to_atom,1}
+calls=2 1
+1 5
+cfl=file
+cfn={erlang,atom_to_list,1}
+calls=2 1
+1 2
+cfl=file
+cfn={erl_lint,keyword_warning,3}
+calls=2 1
+1 2
+fl=file
+fn={erl_lint,vtmerge,2}
+1 46
+cfl=file
+cfn={orddict,merge,3}
+calls=26 1
+1 47
+fl=file
+fn={ordsets,from_list,1}
+1 9
+cfl=file
+cfn={lists,usort,1}
+calls=6 1
+1 69
+fl=file
+fn={orddict,merge,3}
+1 72
+fl=file
+fn={lists,usort,1}
+1 11
+cfl=file
+cfn={lists,usplit_2,5}
+calls=2 1
+1 58
+fl=file
+fn={gb_sets,from_list,1}
+1 8
+cfl=file
+cfn={gb_sets,from_ordset,1}
+calls=4 1
+1 38
+cfl=file
+cfn={ordsets,from_list,1}
+calls=4 1
+1 13
+fl=file
+fn={erl_lint,'-start/2-lc$^0/1-0-',1}
+1 59
+cfl=file
+cfn={erl_lint,'-start/2-lc$^0/1-0-',1}
+calls=26 1
+1 0
+fl=file
+fn={lists,usplit_2,5}
+1 12
+cfl=file
+cfn={lists,usplit_2_1,6}
+calls=2 1
+1 49
+cfl=file
+cfn={lists,umergel,3}
+calls=2 1
+1 41
+cfl=file
+cfn={lists,usplit_2,5}
+calls=4 1
+1 0
+fl=file
+fn={erl_lint,bool_option,4}
+1 26
+cfl=file
+cfn={lists,foldl,3}
+calls=26 1
+1 30
+fl=file
+fn=garbage_collect
+1 54
+fl=file
+fn={erl_lint,vtupdate,2}
+1 28
+cfl=file
+cfn={orddict,merge,3}
+calls=18 1
+1 25
+fl=file
+fn={lists,usplit_2_1,6}
+1 5
+cfl=file
+cfn={lists,usplit_2_1,6}
+calls=2 1
+1 0
+cfl=file
+cfn={lists,usplit_2,5}
+calls=2 1
+1 0
+fl=file
+fn={dict,new,0}
+1 29
+cfl=file
+cfn={dict,mk_seg,1}
+calls=14 1
+1 14
+fl=file
+fn={lists,umergel,3}
+1 11
+cfl=file
+cfn={lists,umerge2_2,4}
+calls=2 1
+1 23
+cfl=file
+cfn={lists,rumergel,3}
+calls=2 1
+1 9
+cfl=file
+cfn={lists,umergel,3}
+calls=2 1
+1 0
+fl=file
+fn={erlang,tuple_to_list,1}
+1 40
+fl=file
+fn={erl_eval,merge_bindings,2}
+1 23
+cfl=file
+cfn={orddict,to_list,1}
+calls=5 1
+1 9
+cfl=file
+cfn={lists,foldl,3}
+calls=5 1
+1 8
+fl=file
+fn={gb_sets,from_ordset,1}
+1 9
+cfl=file
+cfn={gb_sets,balance_list,2}
+calls=4 1
+1 29
+fl=file
+fn={erl_lint,shadow_vars,4}
+1 9
+cfl=file
+cfn={erl_lint,is_warn_enabled,2}
+calls=2 1
+1 16
+cfl=file
+cfn={erl_lint,vtold,2}
+calls=2 1
+1 5
+cfl=file
+cfn={erl_lint,vt_no_unsafe,1}
+calls=2 1
+1 5
+cfl=file
+cfn={lists,foldl,3}
+calls=2 1
+1 0
+fl=file
+fn={packages,is_segmented,1}
+1 8
+cfl=file
+cfn={packages,is_segmented_1,1}
+calls=3 1
+1 26
+cfl=file
+cfn={erlang,atom_to_list,1}
+calls=1 1
+1 2
+fl=file
+fn={erlang,list_to_tuple,1}
+1 36
+fl=file
+fn={orddict,filter,2}
+1 34
+fl=file
+fn={erl_lint,'-zip_file_and_line/2-fun-0-',2}
+1 34
+fl=file
+fn={erl_lint,check_old_unused_vars,3}
+1 9
+cfl=file
+cfn={erl_lint,unused_vars,3}
+calls=2 1
+1 15
+cfl=file
+cfn={erl_lint,vtold,2}
+calls=2 1
+1 7
+cfl=file
+cfn={erl_lint,warn_unused_vars,3}
+calls=2 1
+1 2
+fl=file
+fn={erl_lint,unused_vars,3}
+1 11
+cfl=file
+cfn={erl_lint,vtnew,2}
+calls=4 1
+1 15
+cfl=file
+cfn={orddict,filter,2}
+calls=4 1
+1 6
+fl=file
+fn={erl_eval,expand_module_name,2}
+1 7
+cfl=file
+cfn={packages,is_segmented,1}
+calls=1 1
+1 19
+cfl=file
+cfn={erl_eval,binding,2}
+calls=1 1
+1 6
+fl=file
+fn={gb_sets,balance_list,2}
+1 8
+cfl=file
+cfn={gb_sets,balance_list_1,2}
+calls=4 1
+1 21
+fl=file
+fn={erl_lint,check_remote_function,5}
+1 7
+cfl=file
+cfn={erl_lint,deprecated_function,5}
+calls=2 1
+1 14
+cfl=file
+cfn={erl_lint,format_function,5}
+calls=2 1
+1 6
+cfl=file
+cfn={erl_lint,check_qlc_hrl,5}
+calls=2 1
+1 2
+fl=file
+fn={erl_lint,vtnew,2}
+1 16
+cfl=file
+cfn={orddict,filter,2}
+calls=8 1
+1 12
+fl=file
+fn={erl_lint,check_unused_vars,3}
+1 7
+cfl=file
+cfn={erl_lint,unused_vars,3}
+calls=2 1
+1 17
+cfl=file
+cfn={erl_lint,warn_unused_vars,3}
+calls=2 1
+1 4
+fl=file
+fn={erl_lint,vtold,2}
+1 14
+cfl=file
+cfn={orddict,filter,2}
+calls=8 1
+1 13
+fl=file
+fn={packages,is_segmented_1,1}
+1 26
+cfl=file
+cfn={packages,is_segmented_1,1}
+calls=15 1
+1 0
+fl=file
+fn={ordsets,is_element,2}
+1 24
+cfl=file
+cfn={ordsets,is_element,2}
+calls=14 1
+1 0
+fl=file
+fn={lists,umerge2_2,4}
+1 10
+cfl=file
+cfn={lists,umerge2_1,5}
+calls=4 1
+1 21
+cfl=file
+cfn={lists,reverse,2}
+calls=2 1
+1 3
+fl=file
+fn={dict,find,2}
+1 9
+cfl=file
+cfn={dict,get_slot,2}
+calls=2 1
+1 7
+cfl=file
+cfn={dict,get_bucket,2}
+calls=2 1
+1 5
+cfl=file
+cfn={dict,find_val,2}
+calls=2 1
+1 2
+fl=file
+fn={lists,umerge2_1,5}
+1 10
+cfl=file
+cfn={lists,umerge2_2,4}
+calls=4 1
+1 0
+cfl=file
+cfn={lists,umerge2_1,5}
+calls=4 1
+1 0
+fl=file
+fn={gb_sets,balance_list_1,2}
+1 21
+cfl=file
+cfn={gb_sets,balance_list_1,2}
+calls=8 1
+1 0
+fl=file
+fn={erl_lint,keyword_warning,3}
+1 20
+fl=file
+fn={erl_lint,vtsubtract,2}
+1 6
+cfl=file
+cfn={erl_lint,vtnew,2}
+calls=4 1
+1 13
+fl=file
+fn={erl_eval,ret_expr,3}
+1 17
+fl=file
+fn={packages,is_valid,1}
+1 2
+cfl=file
+cfn={packages,is_valid_1,1}
+calls=2 1
+1 14
+fl=file
+fn={erl_lint,is_warn_enabled,2}
+1 2
+cfl=file
+cfn={ordsets,is_element,2}
+calls=2 1
+1 14
+fl=file
+fn={packages,is_valid_1,1}
+1 14
+cfl=file
+cfn={packages,is_valid_1,1}
+calls=10 1
+1 0
+fl=file
+fn={erl_lint,deprecated_function,5}
+1 7
+cfl=file
+cfn={otp_internal,obsolete,3}
+calls=2 1
+1 7
+fl=file
+fn={erl_lint,'-start/2-lc$^1/1-1-',1}
+1 14
+cfl=file
+cfn={erl_lint,'-start/2-lc$^1/1-1-',1}
+calls=6 1
+1 0
+fl=file
+fn={dict,mk_seg,1}
+1 14
+fl=file
+fn={orddict,to_list,1}
+1 9
+fl=file
+fn={lists,rumergel,3}
+1 5
+cfl=file
+cfn={lists,reverse,2}
+calls=2 1
+1 2
+cfl=file
+cfn={lists,umergel,3}
+calls=2 1
+1 0
+fl=file
+fn={packages,concat,2}
+1 2
+cfl=file
+cfn={packages,concat,1}
+calls=2 1
+1 5
+fl=file
+fn={otp_internal,obsolete,3}
+1 5
+cfl=file
+cfn={otp_internal,obsolete_1,3}
+calls=2 1
+1 2
+fl=file
+fn={sets,new,0}
+1 4
+cfl=file
+cfn={sets,mk_seg,1}
+calls=2 1
+1 2
+fl=file
+fn={lists,reverse,1}
+1 6
+fl=file
+fn={erl_lint,warn_unused_vars,3}
+1 6
+fl=file
+fn={erl_lint,pseudolocals,0}
+1 6
+fl=file
+fn={erl_lint,format_function,5}
+1 4
+cfl=file
+cfn={erl_lint,is_format_function,2}
+calls=2 1
+1 2
+fl=file
+fn={erl_eval,binding,2}
+1 4
+cfl=file
+cfn={orddict,find,2}
+calls=1 1
+1 2
+fl=file
+fn={packages,concat,1}
+1 2
+cfl=file
+cfn={packages,concat_1,1}
+calls=2 1
+1 3
+fl=file
+fn={lists,reverse,2}
+1 5
+fl=file
+fn={erlang,list_to_atom,1}
+1 5
+fl=file
+fn={erlang,demonitor,1}
+1 5
+fl=file
+fn={erl_lint,vt_no_unsafe,1}
+1 2
+cfl=file
+cfn={erl_lint,'-vt_no_unsafe/1-lc$^0/1-0-',1}
+calls=2 1
+1 3
+fl=file
+fn={erl_lint,guard,3}
+1 3
+cfl=file
+cfn={erl_lint,guard_tests,3}
+calls=2 1
+1 2
+fl=file
+fn={erl_internal,bif,3}
+1 5
+fl=file
+fn={erl_internal,bif,2}
+1 5
+fl=file
+fn={dict,get_bucket,2}
+1 2
+cfl=file
+cfn={dict,get_bucket_s,2}
+calls=2 1
+1 3
+fl=file
+fn={orddict,from_list,1}
+1 2
+cfl=file
+cfn={lists,foldl,3}
+calls=2 1
+1 2
+fl=file
+fn={erlang,whereis,1}
+1 4
+fl=file
+fn={erlang,monitor,2}
+1 4
+fl=file
+fn={erlang,atom_to_list,1}
+1 4
+fl=file
+fn={erl_lint,value_option,7}
+1 2
+cfl=file
+cfn={lists,foldl,3}
+calls=2 1
+1 2
+fl=file
+fn={packages,concat_1,1}
+1 3
+fl=file
+fn={erl_lint,'-vt_no_unsafe/1-lc$^0/1-0-',1}
+1 3
+fl=file
+fn={dict,get_bucket_s,2}
+1 3
+fl=file
+fn={sets,mk_seg,1}
+1 2
+fl=file
+fn={otp_internal,obsolete_1,3}
+1 2
+fl=file
+fn={orddict,find,2}
+1 2
+fl=file
+fn={erl_lint,is_format_function,2}
+1 2
+fl=file
+fn={erl_lint,head,4}
+1 2
+fl=file
+fn={erl_lint,guard_tests,3}
+1 2
+fl=file
+fn={erl_lint,check_qlc_hrl,5}
+1 2
+fl=file
+fn={dict,find_val,2}
+1 2
+fl=file
+fn=undefined
+1 0
+cfl=file
+cfn={erl_eval,local_func,5}
+calls=0 1
+1 35288
+cfl=file
+cfn={fprof,just_call,2}
+calls=0 1
+1 16
+cfl=file
+cfn={escript,eval_exprs,5}
+calls=0 1
+1 5
+fl=file
+fn={erlang,apply,2}
+1 6
+cfl=file
+cfn={erl_eval,'-expr/5-fun-1-',4}
+calls=1 1
+1 289
+cfl=file
+cfn=suspend
+calls=1 1
+1 181
+fl=file
+fn={erl_eval,'-expr/5-fun-1-',4}
+1 2
+cfl=file
+cfn={erl_eval,eval_fun,5}
+calls=1 1
+1 287
+fl=file
+fn={erl_eval,eval_fun,5}
+1 2
+cfl=file
+cfn={erl_eval,eval_fun,6}
+calls=1 1
+1 285
+fl=file
+fn={erl_eval,eval_fun,6}
+1 11
+cfl=file
+cfn={erl_eval,exprs,5}
+calls=1 1
+1 256
+cfl=file
+cfn={erl_eval,add_bindings,2}
+calls=1 1
+1 9
+cfl=file
+cfn={erl_eval,new_bindings,0}
+calls=1 1
+1 4
+cfl=file
+cfn={erl_eval,guard,4}
+calls=1 1
+1 3
+cfl=file
+cfn={erl_eval,match_list,4}
+calls=1 1
+1 2
+fl=file
+fn={erl_eval,exprs,5}
+1 2
+cfl=file
+cfn={erl_eval,expr,5}
+calls=1 1
+1 254
+fl=file
+fn={erl_eval,expr,5}
+1 79
+cfl=file
+cfn={erl_eval,expr_list,4}
+calls=1 1
+1 159
+cfl=file
+cfn={erl_eval,merge_bindings,2}
+calls=6 1
+1 93
+cfl=file
+cfn={erl_eval,expand_module_name,2}
+calls=1 1
+1 27
+cfl=file
+cfn={erl_eval,ret_expr,3}
+calls=13 1
+1 23
+cfl=file
+cfn={erl_eval,do_apply,5}
+calls=1 1
+1 9
+cfl=file
+cfn={erl_internal,bif,3}
+calls=1 1
+1 2
+cfl=file
+cfn={erl_eval,expr,5}
+calls=12 1
+1 0
+fl=file
+fn=suspend
+1 0
+fl=file
+fn={erl_eval,expr_list,4}
+1 2
+cfl=file
+cfn={erl_eval,expr_list,6}
+calls=1 1
+1 157
+fl=file
+fn={erl_eval,expr_list,6}
+1 9
+cfl=file
+cfn={erl_eval,merge_bindings,2}
+calls=1 1
+1 8
+cfl=file
+cfn={lists,reverse,1}
+calls=1 1
+1 2
+cfl=file
+cfn={erl_eval,expr_list,6}
+calls=1 1
+1 0
+cfl=file
+cfn={erl_eval,expr,5}
+calls=1 1
+1 0
+fl=file
+fn={erl_eval,merge_bindings,2}
+1 39
+cfl=file
+cfn=garbage_collect
+calls=2 1
+1 32
+cfl=file
+cfn={orddict,to_list,1}
+calls=7 1
+1 17
+cfl=file
+cfn={lists,foldl,3}
+calls=7 1
+1 13
+fl=file
+fn=garbage_collect
+1 32
+fl=file
+fn={erl_eval,expand_module_name,2}
+1 5
+cfl=file
+cfn={packages,is_segmented,1}
+calls=1 1
+1 17
+cfl=file
+cfn={erl_eval,binding,2}
+calls=1 1
+1 5
+fl=file
+fn={erl_eval,ret_expr,3}
+1 23
+fl=file
+fn={orddict,to_list,1}
+1 19
+fl=file
+fn={packages,is_segmented,1}
+1 4
+cfl=file
+cfn={packages,is_segmented_1,1}
+calls=1 1
+1 11
+cfl=file
+cfn={erlang,atom_to_list,1}
+calls=1 1
+1 2
+fl=file
+fn={lists,foldl,3}
+1 15
+fl=file
+fn={packages,is_segmented_1,1}
+1 11
+cfl=file
+cfn={packages,is_segmented_1,1}
+calls=5 1
+1 0
+fl=file
+fn={erl_eval,do_apply,5}
+1 3
+cfl=file
+cfn={lists,reverse,1}
+calls=1 1
+1 6
+fl=file
+fn={erl_eval,add_bindings,2}
+1 5
+cfl=file
+cfn={orddict,to_list,1}
+calls=1 1
+1 2
+cfl=file
+cfn={lists,foldl,3}
+calls=1 1
+1 2
+fl=file
+fn={lists,reverse,1}
+1 6
+cfl=file
+cfn={lists,reverse,2}
+calls=1 1
+1 2
+fl=file
+fn={erl_eval,binding,2}
+1 3
+cfl=file
+cfn={orddict,find,2}
+calls=1 1
+1 2
+fl=file
+fn={erl_eval,new_bindings,0}
+1 2
+cfl=file
+cfn={orddict,new,0}
+calls=1 1
+1 2
+fl=file
+fn={erl_eval,guard,4}
+1 2
+cfl=file
+cfn={erl_eval,guard0,4}
+calls=1 1
+1 1
+fl=file
+fn={orddict,new,0}
+1 2
+fl=file
+fn={orddict,find,2}
+1 2
+fl=file
+fn={lists,reverse,2}
+1 2
+fl=file
+fn={erlang,atom_to_list,1}
+1 2
+fl=file
+fn={erl_internal,bif,3}
+1 2
+fl=file
+fn={erl_eval,match_list,4}
+1 2
+fl=file
+fn={erl_eval,guard0,4}
+1 1
+fl=file
+fn=undefined
+1 0
+cfl=file
+cfn={erlang,apply,2}
+calls=1 1
+1 476
+fl=file
+fn={erlang,apply,2}
+1 2
+cfl=file
+cfn=suspend
+calls=1 1
+1 623
+cfl=file
+cfn={erl_eval,'-expr/5-fun-1-',4}
+calls=1 1
+1 157
+fl=file
+fn=suspend
+1 0
+fl=file
+fn={erl_eval,'-expr/5-fun-1-',4}
+1 1
+cfl=file
+cfn={erl_eval,eval_fun,5}
+calls=1 1
+1 156
+fl=file
+fn={erl_eval,eval_fun,5}
+1 1
+cfl=file
+cfn={erl_eval,eval_fun,6}
+calls=1 1
+1 155
+fl=file
+fn={erl_eval,eval_fun,6}
+1 5
+cfl=file
+cfn={erl_eval,exprs,5}
+calls=1 1
+1 141
+cfl=file
+cfn={erl_eval,add_bindings,2}
+calls=1 1
+1 4
+cfl=file
+cfn={erl_eval,new_bindings,0}
+calls=1 1
+1 2
+cfl=file
+cfn={erl_eval,guard,4}
+calls=1 1
+1 2
+cfl=file
+cfn={erl_eval,match_list,4}
+calls=1 1
+1 1
+fl=file
+fn={erl_eval,exprs,5}
+1 1
+cfl=file
+cfn={erl_eval,expr,5}
+calls=1 1
+1 140
+fl=file
+fn={erl_eval,expr,5}
+1 42
+cfl=file
+cfn={erl_eval,expr_list,4}
+calls=1 1
+1 89
+cfl=file
+cfn={erl_eval,merge_bindings,2}
+calls=6 1
+1 50
+cfl=file
+cfn={erl_eval,ret_expr,3}
+calls=13 1
+1 16
+cfl=file
+cfn={erl_eval,expand_module_name,2}
+calls=1 1
+1 15
+cfl=file
+cfn={erl_eval,do_apply,5}
+calls=1 1
+1 4
+cfl=file
+cfn={erl_internal,bif,3}
+calls=1 1
+1 1
+cfl=file
+cfn={erl_eval,expr,5}
+calls=12 1
+1 0
+fl=file
+fn={erl_eval,expr_list,4}
+1 1
+cfl=file
+cfn={erl_eval,expr_list,6}
+calls=1 1
+1 88
+fl=file
+fn={erl_eval,expr_list,6}
+1 6
+cfl=file
+cfn={erl_eval,merge_bindings,2}
+calls=1 1
+1 4
+cfl=file
+cfn={lists,reverse,1}
+calls=1 1
+1 1
+cfl=file
+cfn={erl_eval,expr_list,6}
+calls=1 1
+1 0
+cfl=file
+cfn={erl_eval,expr,5}
+calls=1 1
+1 0
+fl=file
+fn={erl_eval,merge_bindings,2}
+1 19
+cfl=file
+cfn=garbage_collect
+calls=2 1
+1 19
+cfl=file
+cfn={orddict,to_list,1}
+calls=7 1
+1 9
+cfl=file
+cfn={lists,foldl,3}
+calls=7 1
+1 7
+fl=file
+fn=garbage_collect
+1 19
+fl=file
+fn={erl_eval,ret_expr,3}
+1 16
+fl=file
+fn={erl_eval,expand_module_name,2}
+1 3
+cfl=file
+cfn={packages,is_segmented,1}
+calls=1 1
+1 9
+cfl=file
+cfn={erl_eval,binding,2}
+calls=1 1
+1 3
+fl=file
+fn={orddict,to_list,1}
+1 10
+fl=file
+fn={packages,is_segmented,1}
+1 2
+cfl=file
+cfn={packages,is_segmented_1,1}
+calls=1 1
+1 6
+cfl=file
+cfn={erlang,atom_to_list,1}
+calls=1 1
+1 1
+fl=file
+fn={lists,foldl,3}
+1 8
+fl=file
+fn={packages,is_segmented_1,1}
+1 6
+cfl=file
+cfn={packages,is_segmented_1,1}
+calls=5 1
+1 0
+fl=file
+fn={lists,reverse,1}
+1 3
+cfl=file
+cfn={lists,reverse,2}
+calls=1 1
+1 1
+fl=file
+fn={erl_eval,do_apply,5}
+1 1
+cfl=file
+cfn={lists,reverse,1}
+calls=1 1
+1 3
+fl=file
+fn={erl_eval,add_bindings,2}
+1 2
+cfl=file
+cfn={orddict,to_list,1}
+calls=1 1
+1 1
+cfl=file
+cfn={lists,foldl,3}
+calls=1 1
+1 1
+fl=file
+fn={erl_eval,binding,2}
+1 2
+cfl=file
+cfn={orddict,find,2}
+calls=1 1
+1 1
+fl=file
+fn={erl_eval,new_bindings,0}
+1 1
+cfl=file
+cfn={orddict,new,0}
+calls=1 1
+1 1
+fl=file
+fn={erl_eval,guard,4}
+1 1
+cfl=file
+cfn={erl_eval,guard0,4}
+calls=1 1
+1 1
+fl=file
+fn={orddict,new,0}
+1 1
+fl=file
+fn={orddict,find,2}
+1 1
+fl=file
+fn={lists,reverse,2}
+1 1
+fl=file
+fn={erlang,atom_to_list,1}
+1 1
+fl=file
+fn={erl_internal,bif,3}
+1 1
+fl=file
+fn={erl_eval,match_list,4}
+1 1
+fl=file
+fn={erl_eval,guard0,4}
+1 1
+fl=file
+fn=undefined
+1 0
+cfl=file
+cfn={erlang,apply,2}
+calls=1 1
+1 782

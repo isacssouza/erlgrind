@@ -1,0 +1,10 @@
+#!/usr/bin/env escript
+
+main([]) ->
+    fprof:start(),
+    fprof:trace([start]),
+    spawn(fun() -> lists:reverse([a,b,c,d,e]) end),
+    spawn(fun() -> lists:reverse([a,b,c,d,e]) end),
+    fprof:trace([stop]),
+    fprof:profile(),
+    fprof:analyse([{dest, "spwan.fprof"}]).
