@@ -47,4 +47,4 @@ process_called(OutFile, {{Mod, Func, Arity}, Cnt, Acc, Own}) ->
     io:format(OutFile, "cfl=~w.erl~n", [Mod]),
     io:format(OutFile, "cfn=~w/~w~n", [Func, Arity]),
     io:format(OutFile, "calls=~w 1~n", [Cnt]),
-    io:format(OutFile, "1 ~w~n", [trunc(Own*1000)]).
+    io:format(OutFile, "1 ~w~n", [trunc(Acc*1000)]).
