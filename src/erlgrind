@@ -1,14 +1,27 @@
 #!/usr/bin/env escript
+%%%%-------------------------------------------------------------------
+%%% File    : erlgrind
+%%% Author  : Isac Sacchi e Souza <isacssouza@gmail.com>
+%%% Description : Escript to convert fprof output to callgrind output.
+%%%
+%%% Created : 2011-09-04
+%%%-------------------------------------------------------------------
 
 main([InFileName, OutFileName]) ->
     {ok, OutFile} = file:open(OutFileName, [write]),
     {ok, Terms} = file:consult(InFileName),
-    io:format(OutFile, "events: Instructions~n", []),
+    io:format(OutFile, "events: Time~n", []),
     process_terms(OutFile, Terms).
 
 process_terms(OutFile, []) ->
     file:close(OutFile);
 process_terms(OutFile, [{analysis_options, _Opt} | Rest]) ->
+    process_terms(OutFile, Rest);
+process_terms(OutFile, [[{totals, _Cnt, Acc, _Own}] | Rest]) ->
+    io:format(OutFile, "summary: ~w~n", [trunc(Acc*1000)]),
+    process_terms(OutFile, Rest);
+process_terms(OutFile, [[{Pid, _Cnt, _Acc, _Own}] | Rest]) when is_list(Pid)->
+    io:format(OutFile, "ob=~s~n", [Pid]),
     process_terms(OutFile, Rest);
 process_terms(OutFile, [List | Rest]) when is_list(List) ->
     process_terms(OutFile, Rest);
@@ -21,7 +34,8 @@ process_entry(OutFile, {_CallingList, Actual, CalledList}) ->
     process_called_list(OutFile, CalledList).
 
 process_actual(OutFile, {Func, _Cnt, _Acc, Own}) ->
-    io:format(OutFile, "fl=~w~n", [file]),
+    File = get_file(Func),
+    io:format(OutFile, "fl=~w~n", [File]),
     io:format(OutFile, "fn=~w~n", [Func]),
     io:format(OutFile, "1 ~w~n", [trunc(Own*1000)]).
 
@@ -32,7 +46,13 @@ process_called_list(OutFile, [Called | Rest]) ->
     process_called_list(OutFile, Rest).
 
 process_called(OutFile, {Func, Cnt, Acc, _Own}) ->
-    io:format(OutFile, "cfl=~w~n", [file]),
+    File = get_file(Func),
+    io:format(OutFile, "cfl=~w~n", [File]),
     io:format(OutFile, "cfn=~w~n", [Func]),
     io:format(OutFile, "calls=~w 1~n", [Cnt]),
     io:format(OutFile, "1 ~w~n", [trunc(Acc*1000)]).
+
+get_file({Mod, _Func, _Arity}) ->
+    Mod;
+get_file(_Func) ->
+    pseudo.
