@@ -1,19 +1,28 @@
 [kcachegrind]: http://kcachegrind.sourceforge.net/html/Home.html
+[fprof]: http://www.erlang.org/doc/man/fprof.html#analysis
+[callgrind]: http://valgrind.org/docs/manual/cl-format.html
 
-Description
------------
+## Description
 
-Convert fprof profiling output to callgrind output.
+This escript converts erlang's fprof output to valgrind's callgrind output.
 
-To generate the fprof output use fprof:analyse([dest, "outfile.fprof"]). Do not use totals.
+To generate the fprof output use <code>fprof:analyse([dest, "outfile.fprof"]).<code>. Do not use totals.
 
 Converting to callgrind is simple, just type:
 <code>./erlgrind_script outfile.fprof outfile.cgrind<code>
 
+You must have escript in your PATH.
+
 Then you can open outfile.cgrind with a tool like [kcachegrind][].
 
-Example
--------
+## Formats
+
+For a description of fprof's format, check [fprof].
+
+For a description of callgrind's format, check [callgrind].
+
+## Example
+
 
 The fprof output:
 
