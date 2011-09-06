@@ -143,7 +143,8 @@ fn={erlang,'++',2}
 </pre>
 
 Where:
-    - costs are in milliseconds
-    - ob is set as the Pid of the process that called the function
-    - file is set as the erlang module
-    - line numbers are hardcoded as 1
+
+- costs are in milliseconds
+- ob is set as the Pid of the process that called the function
+- file is set as the erlang module
+- line numbers are hardcoded as 1
