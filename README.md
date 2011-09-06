@@ -15,8 +15,9 @@ Then you can open outfile.cgrind with a tool like [kcachegrind][].
 Example
 -------
 
-The fprof output:<br>
-<code>
+The fprof output:
+
+<pre>
 %% Analysis results:
 {  analysis_options,
  [{callers, true},
@@ -55,10 +56,11 @@ The fprof output:<br>
 {[{{sort,quicksort_div,4},                        9,    0.073,    0.050}],     
  { {sort,merge,3},                                9,    0.073,    0.050},     %
  [{{erlang,'++',2},                               9,    0.023,    0.023}]}.    
- </code>
+ </pre>
 
- Will generate the callgrind output: <br>
- <code>
+Will generate the callgrind output: <br>
+
+<pre>
 events: Time
 summary: 330
 ob=<0.33.0>
@@ -138,10 +140,10 @@ calls=1 1
 fl=erlang
 fn={erlang,'++',2}
 1 23
-</code>
+</pre>
 
 Where:
-    costs are in milliseconds
-    ob is set as the Pid of the process that called the function
-    file is set as the erlang module
-    line numbers are hardcoded as 1
+    - costs are in milliseconds
+    - ob is set as the Pid of the process that called the function
+    - file is set as the erlang module
+    - line numbers are hardcoded as 1
