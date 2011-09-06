@@ -6,10 +6,9 @@
 
 This escript converts erlang's fprof output to valgrind's callgrind output.
 
-To generate the fprof output use <code>fprof:analyse([dest, "outfile.fprof"]).<code>. Do not use totals.
+To generate the fprof output use `fprof:analyse([dest, "outfile.fprof"]).`. Do not use totals.
 
-Converting to callgrind is simple, just type:
-<code>./erlgrind_script outfile.fprof outfile.cgrind<code>
+Converting to callgrind is simple, just type: `./erlgrind_script outfile.fprof outfile.cgrind`.
 
 You must have escript in your PATH.
 
