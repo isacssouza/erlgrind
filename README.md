@@ -38,7 +38,7 @@ The fprof output:
 
 
 %                                               CNT       ACC       OWN        
-[{ "<0.33.0>",                                   90,undefined,    0.330}].   %%
+[{ "&lt;0.33.0&gt;",                                   90,undefined,    0.330}].   %%
 
 {[{{sort,quicksort,1},                            0,    0.269,    0.007},      
   {undefined,                                     0,    0.025,    0.018},      
@@ -71,7 +71,7 @@ Will generate the callgrind output: <br>
 <pre>
 events: Time
 summary: 330
-ob=<0.33.0>
+ob=&lt;0.33.0&gt;
 fl=fprof
 fn={fprof,just_call,2}
 1 39
