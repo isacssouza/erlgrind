@@ -2,7 +2,7 @@
 [fprof]: http://www.erlang.org/doc/man/fprof.html#analysis
 [callgrind]: http://valgrind.org/docs/manual/cl-format.html
 
-## Description
+### Description
 
 This escript converts erlang's fprof output to valgrind's callgrind output.
 
@@ -14,14 +14,19 @@ You must have escript in your PATH.
 
 Then you can open outfile.cgrind with a tool like [kcachegrind][].
 
-## Formats
+### Formats
 
 For a description of fprof's format, check [fprof].
 
 For a description of callgrind's format, check [callgrind].
 
-## Example
+### Usage
 
+    erlgring <input file> <output file> [Options]
+    Options:
+        -p  use process pid as ELF object
+
+### Example
 
 The fprof output:
 

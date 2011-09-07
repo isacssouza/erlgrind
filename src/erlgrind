@@ -78,5 +78,5 @@ parse_params(Params) ->
     end.
 
 print_usage() ->
-    io:format("Usage: erlgring <input file> <output file> [Options]\n"),
-    io:format("Options:\n\t-p\tuse process pid as ELF object\n").
+    io:format("Usage: erlgring <input file> <output file> [Options]~n"),
+    io:format("Options:~n\t-p\tuse process pid as ELF object~n").
