@@ -7,27 +7,36 @@
 %%% Created : 2011-09-04
 %%%-------------------------------------------------------------------
 
-main([InFileName, OutFileName]) ->
-    {ok, OutFile} = file:open(OutFileName, [write]),
-    {ok, Terms} = file:consult(InFileName),
-    io:format(OutFile, "events: Time~n", []),
-    process_terms(OutFile, Terms).
+-record(opts, {pid = false :: boolean()}).
 
-process_terms(OutFile, []) ->
+main(Params) ->
+    case parse_params(Params) of
+        {Opts, InFileName, OutFileName} ->
+            {ok, OutFile} = file:open(OutFileName, [write]),
+            {ok, Terms} = file:consult(InFileName),
+            io:format(OutFile, "events: Time~n", []),
+            process_terms(OutFile, Terms, Opts);
+        {error, bad_arg_length} ->
+            io:format("Error. Invalid number of arguments.\n"),
+            print_usage()
+    end.
+
+process_terms(OutFile, [], _Opts) ->
     file:close(OutFile);
-process_terms(OutFile, [{analysis_options, _Opt} | Rest]) ->
-    process_terms(OutFile, Rest);
-process_terms(OutFile, [[{totals, _Cnt, Acc, _Own}] | Rest]) ->
+process_terms(OutFile, [{analysis_options, _Opt} | Rest], Opts) ->
+    process_terms(OutFile, Rest, Opts);
+process_terms(OutFile, [[{totals, _Cnt, Acc, _Own}] | Rest], Opts) ->
     io:format(OutFile, "summary: ~w~n", [trunc(Acc*1000)]),
-    process_terms(OutFile, Rest);
-process_terms(OutFile, [[{Pid, _Cnt, _Acc, _Own}] | Rest]) when is_list(Pid)->
+    process_terms(OutFile, Rest, Opts);
+process_terms(OutFile, [[{Pid, _Cnt, _Acc, _Own} | _T] | Rest], Opts) 
+        when is_list(Pid) and (Opts#opts.pid =:= true) ->
     io:format(OutFile, "ob=~s~n", [Pid]),
-    process_terms(OutFile, Rest);
-process_terms(OutFile, [List | Rest]) when is_list(List) ->
-    process_terms(OutFile, Rest);
-process_terms(OutFile, [Entry | Rest]) ->
+    process_terms(OutFile, Rest, Opts);
+process_terms(OutFile, [List | Rest], Opts) when is_list(List) ->
+    process_terms(OutFile, Rest, Opts);
+process_terms(OutFile, [Entry | Rest], Opts) ->
     process_entry(OutFile, Entry),
-    process_terms(OutFile, Rest).
+    process_terms(OutFile, Rest, Opts).
 
 process_entry(OutFile, {_CallingList, Actual, CalledList}) ->
     process_actual(OutFile, Actual),
@@ -56,3 +65,18 @@ get_file({Mod, _Func, _Arity}) ->
     Mod;
 get_file(_Func) ->
     pseudo.
+
+parse_params(Params) ->
+    Opts = #opts{pid = lists:member("-p", Params)},
+    Files = lists:delete("-p", Params),
+    case length(Files) of
+        2 ->
+            [InFileName, OutFileName] = Files,
+            {Opts, InFileName, OutFileName};
+        _ ->
+            {error, bad_arg_length}
+    end.
+
+print_usage() ->
+    io:format("Usage: erlgring <input file> <output file> [Options]\n"),
+    io:format("Options:\n\t-p\tuse process pid as ELF object\n").
