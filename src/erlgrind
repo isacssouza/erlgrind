@@ -102,7 +102,8 @@ infile_format(InFileName) ->
         ".analysis" ->
             analysis;
         _ ->
-            throw(io_lib:format("Bad filename \"~s\". Must end with .trace or .analysis", [InFileName]))
+            % if we can't identify the extension, default to analysis
+            analysis
     end.
 
 maybe_convert_trace(#opts{in_file_format=analysis, in_file=InFileName}) ->
