@@ -22,9 +22,13 @@ For a description of callgrind's format, check [callgrind].
 
 ### Usage
 
-    erlgring <input file> <output file> [Options]
+    Usage: erlgring [Options] <input file .trace/.analysis> [<output file>]
     Options:
-        -p  use process pid as ELF object
+        -p	use process pid as ELF object
+    	-h	show this message
+
+If you use a file with a `.trace` extension, erlgrind will treat it as a file generated with `fprof:trace`, automatically analyse it with `fprof:analyse` and proceed with the conversion.
+The output file name is optional.
 
 ### Example
 
