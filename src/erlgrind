@@ -7,17 +7,24 @@
 %%% Created : 2011-09-04
 %%%-------------------------------------------------------------------
 
--record(opts, {pid = false :: boolean()}).
+-record(opts, {pid = false :: boolean(),
+               in_file :: string(),
+               in_file_format :: trace | analysis,
+               out_file :: string()}).
 
 main(Params) ->
-    case parse_params(Params) of
-        {Opts, InFileName, OutFileName} ->
-            {ok, OutFile} = file:open(OutFileName, [write]),
-            {ok, Terms} = file:consult(InFileName),
+    try parse_params(Params, #opts{}) of
+        Opts ->
+            AnalysisFile = maybe_convert_trace(Opts),
+            {ok, OutFile} = file:open(Opts#opts.out_file, [write]),
+            {ok, Terms} = file:consult(AnalysisFile),
             io:format(OutFile, "events: Time~n", []),
-            process_terms(OutFile, Terms, Opts);
-        {error, bad_arg_length} ->
-            io:format("Error. Invalid number of arguments.\n"),
+            process_terms(OutFile, Terms, Opts)
+    catch
+        throw:help ->
+            print_usage();
+        _:Reason ->
+            io:format("Error. ~s.~n", [Reason]),
             print_usage()
     end.
 
@@ -66,17 +73,53 @@ get_file({Mod, _Func, _Arity}) ->
 get_file(_Func) ->
     pseudo.
 
-parse_params(Params) ->
-    Opts = #opts{pid = lists:member("-p", Params)},
-    Files = lists:delete("-p", Params),
-    case length(Files) of
-        2 ->
-            [InFileName, OutFileName] = Files,
-            {Opts, InFileName, OutFileName};
+parse_params(["-h" | _], _) ->
+    throw(help);
+parse_params(["-p" | Rest], Opts) ->
+    parse_params(Rest, Opts#opts{pid=true});
+parse_params([[$- | _] = Opt | _], _) ->
+    throw(io_lib:format("Invalid option \"~s\"", [Opt]));
+parse_params([Arg | Rest], #opts{in_file=undefined} = Opts) ->
+    parse_params(Rest, Opts#opts{in_file=Arg,
+                                 in_file_format = infile_format(Arg)});
+parse_params([Arg | Rest], #opts{out_file=undefined} = Opts) ->
+    parse_params(Rest, Opts#opts{out_file=Arg});
+parse_params([], #opts{out_file=undefined, in_file=InFileName} = Opts) ->
+    %% No outfile specified:
+    %% generate output filename by replacing file extension with ".cgrind"
+    OutFileName = replace_extension(InFileName, ".cgrind"),
+    parse_params([], Opts#opts{out_file=OutFileName});
+parse_params([], Opts) ->
+    Opts;
+parse_params(Other, _) ->
+    throw(io_lib:format("Invalid argument \"~s\"", [Other])).
+
+
+infile_format(InFileName) ->
+    case filename:extension(InFileName) of
+        ".trace" ->
+            trace;
+        ".analysis" ->
+            analysis;
         _ ->
-            {error, bad_arg_length}
+            throw(io_lib:format("Bad filename \"~s\". Must end with .trace or .analysis", [InFileName]))
     end.
 
+maybe_convert_trace(#opts{in_file_format=analysis, in_file=InFileName}) ->
+    InFileName;
+maybe_convert_trace(#opts{in_file_format=trace, in_file=InFileName}) ->
+    AnalysisFileName = replace_extension(InFileName, ".analysis"),
+    fprof:profile([{file, InFileName}]),
+    fprof:analyse([{dest, AnalysisFileName}]),
+    AnalysisFileName.
+
+replace_extension(Filename, NewExtension) ->
+    Idx = string:rchr(Filename, $.),
+    BaseFile = string:substr(Filename, 1, Idx - 1),
+    BaseFile ++ NewExtension.
+
 print_usage() ->
-    io:format("Usage: erlgring <input file> <output file> [Options]~n"),
-    io:format("Options:~n\t-p\tuse process pid as ELF object~n").
+    io:format("Usage: erlgring [Options] <input file .trace/.analysis> [<output file>]~n"),
+    io:format("Options:~n"
+              "\t-p\tuse process pid as ELF object~n"
+              "\t-h\tshow this message~n").
