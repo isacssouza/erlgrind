@@ -479,7 +479,7 @@ fn={erlang,setelement,3}
 1 552
 fl=pseudo
 fn=suspend
-1 0
+1 468
 fl=dict
 fn={dict,maybe_expand_aux,2}
 1 279
@@ -1243,7 +1243,7 @@ calls=12 1
 1 0
 fl=pseudo
 fn=suspend
-1 0
+1 181
 fl=erl_eval
 fn={erl_eval,expr_list,4}
 1 2
@@ -1414,7 +1414,7 @@ calls=1 1
 1 157
 fl=pseudo
 fn=suspend
-1 0
+1 623
 fl=erl_eval
 fn={erl_eval,'-expr/5-fun-1-',4}
 1 1

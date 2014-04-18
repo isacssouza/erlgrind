@@ -74,11 +74,19 @@ process_entry(OutFile, {_CallingList, Actual, CalledList}) ->
     process_actual(OutFile, Actual),
     process_called_list(OutFile, CalledList).
 
-process_actual(OutFile, {Func, _Cnt, _Acc, Own}) ->
+process_actual(OutFile, {Func, _Cnt, _Acc, _Own} = Actual) ->
     File = get_file(Func),
+    Time = actual_time(Actual),
     io:format(OutFile, "fl=~w~n", [File]),
     io:format(OutFile, "fn=~w~n", [Func]),
-    io:format(OutFile, "1 ~w~n", [trunc(Own*1000)]).
+    io:format(OutFile, "1 ~w~n", [Time]).
+
+actual_time({suspend, _Cnt, Acc, _Own}) ->
+    %% fprof doesn't include suspend time as own time, but kcachegrind needs a time value here
+    %% or total percents will add up to more than 100
+    trunc(Acc*1000);
+actual_time({_Func, _Cnt, _Acc, Own}) ->
+    trunc(Own*1000).
 
 process_called_list(_, []) ->
     ok;
