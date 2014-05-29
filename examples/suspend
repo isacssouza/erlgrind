@@ -1,0 +1,10 @@
+#!/usr/bin/env escript
+
+main([]) ->
+    fprof:start(),
+    fprof:trace([start]),
+    spawn(fun() -> timer:sleep(10) end),
+    timer:sleep(20),
+    fprof:trace([stop]),
+    fprof:profile(),
+    fprof:analyse([{dest, "suspend.fprof"}]).
