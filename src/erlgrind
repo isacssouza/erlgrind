@@ -153,7 +153,7 @@ replace_extension(Filename, NewExtension) ->
     BaseFile ++ NewExtension.
 
 print_usage() ->
-    io:format("Usage: erlgring [Options] <input file .trace/.analysis> [<output file>]~n"),
+    io:format("Usage: erlgrind [Options] <input file .trace/.analysis> [<output file>]~n"),
     io:format("Options:~n"
               "\t-p\tuse process pid as ELF object~n"
               "\t-h\tshow this message~n").
