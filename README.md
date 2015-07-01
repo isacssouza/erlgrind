@@ -22,7 +22,7 @@ For a description of callgrind's format, check [callgrind].
 
 ### Usage
 
-    Usage: erlgring [Options] <input file .trace/.analysis> [<output file>]
+    Usage: erlgrind [Options] <input file .trace/.analysis> [<output file>]
     Options:
         -p	use process pid as ELF object
     	-h	show this message
